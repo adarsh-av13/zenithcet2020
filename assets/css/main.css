@@ -1,0 +1,55 @@
+.nav-logo {
+    height: 80px;
+    padding-left: 20px;
+}
+
+.nav-left {
+    flex: 0.5;
+}
+
+.nav-right {
+    flex: 0.5;
+}
+
+.mynav {
+    visibility: hidden;
+}
+
+.starter img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+body {
+    height: 100%;
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+    /* background: linear-gradient(to bottom, black, rgb(90, 5, 5), black); */
+    margin: 0;
+}
+
+nav {
+    background: linear-gradient(black);
+    /* border-bottom: 1px solid white; */
+    border-radius: 6px;
+    height: 20%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    /* border: 1px solid grey;
+                border-radius: 5px; */
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    padding: 1.2rem !important;
+    border: 1px solid white;
+    border-radius: 5px;
+}
