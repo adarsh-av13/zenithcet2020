@@ -1,6 +1,6 @@
 .nav-logo {
     height: 80px;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .nav-left {
@@ -16,7 +16,12 @@
 }
 
 .starterchng {
-    animation: diagonal 3s;
+    animation: diagonal 1.5s;
+}
+
+#starter {
+    text-align: center;
+    color: white;
 }
 
 #starter img {
@@ -26,14 +31,18 @@
     width: 20%;
 }
 
+#starter h4 {
+    font-weight: 1000;
+}
+
 @keyframes diagonal {
     0% {
         transform: translatex(0px) translatey(0px);
-        width: 90%;
+        width: 100%;
     }
     100% {
-        transform: translatex(-100px) translatey(-100px);
-        width: 25%;
+        transform: translatex(-220px) translatey(-100px);
+        width: 50%;
     }
 }
 
