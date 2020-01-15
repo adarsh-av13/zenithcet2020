@@ -11,28 +11,41 @@
     flex: 0.5;
 }
 
-.mynav {
+.hidden {
     visibility: hidden;
 }
 
-.starter img {
+.starterchng {
+    animation: diagonal 3s;
+}
+
+#starter img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
 }
 
+@keyframes diagonal {
+    0% {
+        transform: translatex(0px) translatey(0px);
+        width: 90%;
+    }
+    100% {
+        transform: translatex(-100px) translatey(-100px);
+        width: 25%;
+    }
+}
+
 body {
     height: 100%;
-    background-image: url("../images/back.jpg");
     background-size: cover;
-    /* background: linear-gradient(to bottom, black, rgb(90, 5, 5), black); */
+    background: linear-gradient(to bottom, black, rgb(90, 5, 5), black);
     margin: 0;
 }
 
 nav {
     background: linear-gradient(black);
-    /* border-bottom: 1px solid white; */
     border-radius: 6px;
     height: 20%;
     width: 100%;
@@ -41,8 +54,6 @@ nav {
 a {
     text-decoration: none;
     color: white;
-    /* border: 1px solid grey;
-                border-radius: 5px; */
     margin-right: 10px;
 }
 
