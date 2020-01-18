@@ -4,23 +4,25 @@ function loadHome() {
     var starterText = document.getElementById("starter-text");
     starterText.classList.add('hidden');
     var starter = document.getElementById("starter");
+    var navRight = document.getElementById("rightn");
     starter.classList.add("starterchng");
+    navRight.classList.remove('hidden');
+
 }
 
 var navigatorsProperties = ['animationend', 'webkitAnimationEnd'];
 
 window.onload = () => {
     var starter = document.getElementById("starter");
+    var hiddens = document.querySelectorAll(".hidden");
     var nav = document.getElementById("mynav");
+    var road = document.getElementById("road");
     var navLeft = document.getElementById("leftn");
-    var navRight = document.getElementById("rightn");
     for (var i in navigatorsProperties) {
         starter.addEventListener(navigatorsProperties[i], function() {
             starter.classList.add('hidden');
-            nav.classList.remove('hidden');
-            setTimeout(function() {
-                navRight.classList.remove('hidden');
-            }, 100);
+            hiddens.forEach((hidden) => hidden.classList.remove('hidden'));
+
         }, false);
     }
 };

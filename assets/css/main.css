@@ -1,6 +1,34 @@
+.bubble {
+    width: 1000px;
+    margin: 50px auto;
+    background: rgb(236, 236, 236, 0.3);
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+    border: 2px;
+    border-radius: 5px;
+}
+
+.tri:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid rgb(236, 236, 236, 0.3);
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    right: -20px;
+    top: 6px;
+}
+
 .nav-logo {
-    height: 80px;
+    height: 100px;
     padding-left: 40px;
+    padding-top: 20px;
 }
 
 .nav-left {
@@ -19,9 +47,19 @@
     animation: diagonal 1.5s;
 }
 
+#road {
+    height: 100%;
+    width: 50px;
+    float: right;
+    background: black;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
 #starter {
     text-align: center;
     color: white;
+    position: absolute;
 }
 
 #starter img {
@@ -41,7 +79,7 @@
         width: 100%;
     }
     100% {
-        transform: translatex(-220px) translatey(-100px);
+        transform: translatex(-220px) translatey(-90px);
         width: 50%;
     }
 }
