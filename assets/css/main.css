@@ -1,28 +1,55 @@
 .bubble {
-    width: 80%;
-    margin: 50px auto;
+    max-width: 30px;
+    margin-left: auto;
     background: rgb(236, 236, 236, 0.3);
     padding: 20px;
-    text-align: center;
-    font-weight: 100;
     color: #fff;
     font-family: arial;
-    position: relative;
+    /* position: relative; */
+    font-size: 0;
     border: 2px;
     border-radius: 5px;
+    /* opacity: 0; */
+    height: 30px;
+    margin-right: 5.55vw;
+    align-self: flex-start;
+}
+
+.bubble.active {
+    text-align: center;
+    font-weight: 100;
+    margin-right: 5.55vw;
+    /* opacity: 1; */
+    font-size: 3vh;
+    min-height: 80vh;
+    max-width: 60%;
+}
+
+.roww {
+    width: vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
 }
 
 .tri:before {
     content: "";
     width: 0px;
     height: 0px;
-    position: absolute;
-    border-left: 10px solid rgb(236, 236, 236, 0.3);
-    border-right: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    right: -20px;
+    /* position: absolute; */
+    border-left: 15px solid rgb(236, 236, 236, 0.3);
+    border-right: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    right: -25px;
     top: 6px;
+}
+
+.mainbody {
+    height: 100%;
+    background: rgb(236, 236, 236, 0.3);
+    margin: 2vh 2vw;
 }
 
 .nav-logo {
@@ -39,21 +66,58 @@
     flex: 0.5;
 }
 
-.hidden {
+.hiddenav {
     visibility: hidden;
+}
+
+.hidden {
+    display: none;
 }
 
 .starterchng {
     animation: diagonal 1.5s;
 }
 
-#road {
-    height: 100%;
-    width: 50px;
-    float: right;
+.road {
+    height: 100vh;
+    width: 6vw;
     background: black;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+    border-left: 0.5vw solid white;
+    border-right: 0.5vw solid white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+}
+
+.marginr {
+    margin-right: 5vw;
+}
+
+.crossline {
+    width: 0.5vw;
+    height: 12vh;
+    margin-left: 2.5vw;
+    margin-top: 10vh;
+    background: #fff;
+}
+
+.car {
+    position: fixed;
+    height: 20vh;
+    width: 5vw;
+    top: 5.5vh;
+    right: 5.5vw;
+    /* background: red; */
+    visibility: hidden;
+    align-self: flex-end;
+}
+
+.start {
+    visibility: visible;
+}
+
+#f1car {
+    width: 50%;
 }
 
 #starter {
@@ -107,7 +171,7 @@ a {
 a:hover {
     text-decoration: none;
     color: white;
-    padding: 1.2rem !important;
+    padding: 1rem !important;
     border: 1px solid white;
     border-radius: 5px;
 }
