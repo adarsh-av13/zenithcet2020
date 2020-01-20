@@ -48,11 +48,11 @@ function debounce(func, wait = 20, immediate = true) {
 
 
 function checkSlide(e) {
-    const car = document.getElementById("car");
+    const f1car = document.getElementById("f1car");
     if (window.scrollY > 700)
-        car.className = "car start";
+        f1car.className = "f1car start";
     else
-        car.className = "car";
+        f1car.className = "f1car";
     const sliderImages = document.querySelectorAll('.bubble');
     sliderImages.forEach(slideImage => {
         //halfway

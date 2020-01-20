@@ -101,9 +101,9 @@
     background: #fff;
 }
 
-.car {
+.f1car {
     position: fixed;
-    height: 20vh;
+    height: 10vh;
     width: 5vw;
     top: 5.5vh;
     right: 5.5vw;
@@ -116,9 +116,10 @@
     visibility: visible;
 }
 
-#f1car {
+
+/* #f1car {
     width: 50%;
-}
+} */
 
 #starter {
     text-align: center;
