@@ -1,28 +1,48 @@
 .bubble {
-    width: 80vw;
-    margin: 0 0 0 0 ;
+    max-width: 30px;
+    margin-left: auto;
     background: rgb(236, 236, 236, 0.3);
     padding: 20px;
-    text-align: center;
-    font-weight: 100;
     color: #fff;
     font-family: arial;
-    position: relative;
+    font-size: 0;
     border: 2px;
     border-radius: 5px;
+    height: 30px;
+    align-self: flex-start;
 }
 
-.tri:before {
-    content: "";
+.bubble.active {
+    text-align: center;
+    font-weight: 100;
+    font-size: 3vh;
+    min-height: 80vh;
+    max-width: 80%;
+}
+
+.roww {
+    width: 90vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tri {
     width: 0px;
     height: 0px;
-    position: absolute;
-    border-left: 10px solid rgb(236, 236, 236, 0.3);
-    border-right: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    right: -20px;
-    top: 6px;
+    border-left: 15px solid rgb(236, 236, 236, 0.3);
+    border-right: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin-top:1vh;
+}
+
+.mainbody {
+    height: 80%;
+    margin:0 3vw 5vh 3vw;
+    background: rgb(236, 236, 236, 0.3);
 }
 
 .nav-logo {
@@ -39,23 +59,79 @@
     flex: 0.5;
 }
 
-.hidden {
+.hiddenav {
     visibility: hidden;
+}
+
+.hidden {
+    display: none;
 }
 
 .starterchng {
     animation: diagonal 1.5s;
 }
 
-#road {
-    height: 100%;
-    width: 7vw;
-    margin-left:3vw;
-    /* float: right; */
-    background: black;
-    border-left: 1vw solid white;
-    border-right: 1vw solid white;
+.road {
+    height: 100vh;
+    width: 6vw;
+    background: #00001a;
+    border-left: 0.5vw solid white;
+    border-right: 0.5vw solid white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    opacity:1;
+    box-shadow: 2px 2px 2px 2px black;
 }
+.car{
+    /* background-color:#CF0F0F; */
+    width:8vw;
+    height:auto;
+    position: fixed;
+    right:4.5vw;
+    top:5.5vh;
+    display: none;
+} 
+.startpos{
+    margin-left:84vw;
+    background-color: red;
+    width:6vw;
+    height:30vh;
+}
+.startimg{
+    width:8vw;
+}
+.marginr {
+    margin-right: 5vw;
+}
+
+.crossline {
+    width: 0.5vw;
+    height: 12vh;
+    margin-left: 2.5vw;
+    margin-top: 10vh;
+    background: #fff;
+}
+
+/* .car {
+    position: fixed;
+    height: 10vh;
+    width: 5vw;
+    top: 5.5vh;
+    right: 5.5vw;
+    /* background: red;
+    visibility: hidden;
+    align-self: flex-end;
+} */
+
+.start {
+display:block;
+}
+
+
+/* #f1car {
+    width: 50%;
+} */
 
 #starter {
     text-align: center;
@@ -108,7 +184,7 @@ a {
 a:hover {
     text-decoration: none;
     color: white;
-    padding: 1.2rem !important;
+    padding: 1rem !important;
     border: 1px solid white;
     border-radius: 5px;
 }
@@ -142,11 +218,3 @@ a:hover {
     height:10vh;
     margin-bottom:10vh;
 }
-.car{
-    background-color:#CF0F0F;
-    width:8vw;
-    height:20vh;
-    position: fixed;
-    right:9.35vw;
-    top:40vh;
-} 
