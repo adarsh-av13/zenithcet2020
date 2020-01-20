@@ -1,0 +1,8 @@
+@media only screen and (max-width: 768px) {
+    .road {
+        display: none;
+    }
+    .nav-logo {
+        height: 10vh;
+    }
+}

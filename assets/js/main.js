@@ -1,11 +1,11 @@
 var starter = document.getElementById("starter");
 
 function loadHome() {
-    var starterText = document.getElementById("starter-text");
-    starterText.classList.add('hidden');
     var starter = document.getElementById("starter");
-    var navRight = document.getElementById("rightn");
-    starter.classList.add("starterchng");
+    var navbar = document.getElementById("mynav")
+    var navRight = document.getElementById("navbarRight");
+    starter.classList.add("starter-animate");
+    navbar.classList.remove('hiddenav');
     navRight.classList.remove('hiddenav');
 
 }
@@ -15,8 +15,7 @@ var navigatorsProperties = ['animationend', 'webkitAnimationEnd'];
 window.onload = () => {
     var starter = document.getElementById("starter");
     var hiddens = document.querySelectorAll(".hidden");
-    var navLeft = document.getElementById("leftn");
-
+    var navLeft = document.getElementById("navbarLeft");
 
     for (var i in navigatorsProperties) {
         starter.addEventListener(navigatorsProperties[i], function() {
@@ -27,7 +26,6 @@ window.onload = () => {
         }, false);
     }
 };
-
 
 
 function debounce(func, wait = 0, immediate = true) {
@@ -46,28 +44,32 @@ function debounce(func, wait = 0, immediate = true) {
     };
 }
 
-
 function checkSlide(e) {
     const f1car = document.getElementById("car");
-    const start=document.getElementById("start");
-    const startimg=document.getElementById("startimg");
-    if (window.scrollY > (start.offsetTop-50))
-        {f1car.className = "car start"; startimg.className="hidden";}
-    else
-        {f1car.className = "car"; startimg.className="startimg";}
-    const sliderImages = document.querySelectorAll('.bubble');
-    sliderImages.forEach(slideImage => {
+    const start = document.getElementById("start");
+    const startimg = document.getElementById("startimg");
+    if (window.scrollY > (start.offsetTop - 50)) {
+        f1car.className = "car start";
+        startimg.className = "hidden";
+    } else {
+        f1car.className = "car";
+        startimg.className = "startpos-car";
+    }
+    const bubbledivs = document.querySelectorAll('.bubblediv');
+    bubbledivs.forEach(bubblediv => {
         //halfway
         const slideInAt = (window.scrollY + window.innerHeight) - 550;
         //bottom
-        const imageBottom = slideImage.offsetTop + 609;
-        const isHalfShown = slideInAt > slideImage.offsetTop;
+        const imageBottom = bubblediv.offsetTop + 609;
+        const isHalfShown = slideInAt > bubblediv.offsetTop;
         const isNotScrolledPast = window.scrollY < imageBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-            slideImage.classList.add('active');
+            bubblediv.className = 'offset-1 col-9 bubblediv';
+            bubblediv.querySelector('.bubble').className = 'bubble tri active'
         } else {
-            slideImage.classList.remove('active');
+            bubblediv.className = 'offset-9 col-1 bubblediv';
+            bubblediv.querySelector('.bubble').className = 'bubble tri'
         }
     });
 }

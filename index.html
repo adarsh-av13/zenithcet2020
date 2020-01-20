@@ -1,63 +1,50 @@
+<!-- <!DOCTYPE html> -->
+
 <html>
 
 <head>
-    <title>Zenith CET
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zenith CET</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
 </head>
 
 <body>
-    <nav id="mynav" class="navbar d-flex">
-        <div id="leftn" class="hiddenav nav-left d-flex">
-            <img class="nav-logo" src="assets/images/logo.png">
-        </div>
-        <div id="rightn" class="hiddenav nav-right d-flex justify-content-end">
-            <a href="#mainbody" class="p-3">Home</a>
-            <a href="" class="p-3">About Us</a>
-            <a href="" class="p-3">Sponsors</a>
-            <a href="" class="p-3">The Team</a>
-            <a href="" class="p-3">Contact</a>
+    <nav class="navbar navbar-expand-md navbar-light mynav hiddenav" id="mynav">
+        <a class="navbar-brand hiddenav" id="navbarLeft" href="#"><img id="nav-logo" src="assets/images/nav-logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRight" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse hiddenav" id="navbarRight">
+            <a class="nav-item nav-link" href="#">Default</a>
+            <a class="nav-item nav-link" href="#">Default</a>
+            <a class="nav-item nav-link" href="#">Default</a>
+            <a class="nav-item nav-link" href="#">Default</a>
         </div>
     </nav>
-
     <div id="starter" onclick="loadHome()">
-        <img id="starter-logo" src="assets/images/logo.png">
-        <div id="starter-text">
-            <h4>Z &nbsp; E &nbsp; N &nbsp; I &nbsp; T &nbsp; H</h4>
-            <p>M &nbsp; O &nbsp; T &nbsp; O &nbsp; R &nbsp; S &nbsp; P &nbsp; O &nbsp; R &nbsp; T</p>
-        </div>
+        <img id="starter-logo" src="assets/images/nav-logo.png">
     </div>
- 
     <div id="main" class="mainbody hidden">
     </div>
     <div class="hidden">
-        <div class="roww">
-            <div id="start" class="startpos">
-                <img  id="startimg" class="startimg" src="assets/images/f1car.png">
+        <div class="row">
+            <div id="start" class="offset-11 startpos">
+                <img id="startimg" class="startpos-car" src="assets/images/f1car.png">
             </div>
         </div>
-        <div class="roww">
-            <div class="bubble">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="row">
+            <div class="offset-9 col-1 bubblediv">
+                <div class="bubble tri"></div>
             </div>
-            <div class="tri"></div>
-            <div class="road">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div>
-        </div>
-        <div class="roww">
-            <div class="bubble">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-            <div class="tri"></div>
-            <div class="road">
+            <div class="offset-1 road">
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
@@ -65,25 +52,11 @@
                 <div class="crossline"></div>
             </div>
         </div>
-        <div class="roww">
-            <div class="bubble">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="row">
+            <div class="offset-9 col-1 bubblediv">
+                <div class="bubble tri"></div>
             </div>
-            <div class="tri"></div>
-            <div class="road">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div>
-        </div>
-        <div class="roww">
-            <div class="bubble">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-            <div class="tri"></div>
-            <div class="road">
+            <div class="offset-1 road">
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
@@ -91,7 +64,55 @@
                 <div class="crossline"></div>
             </div>
         </div>
-        <div class="roww">
+        <div class="row">
+            <div class="offset-9 col-1 bubblediv">
+                <div class="bubble tri"></div>
+            </div>
+            <div class="offset-1 road">
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-9 col-1 bubblediv">
+                <div class="bubble tri"></div>
+            </div>
+            <div class="offset-1 road">
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-9 col-1 bubblediv">
+                <div class="bubble tri"></div>
+            </div>
+            <div class="offset-1 road">
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-9 col-1 bubblediv">
+                <div class="bubble tri"></div>
+            </div>
+            <div class="offset-1 road">
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+                <div class="crossline"></div>
+            </div>
+        </div>
+        <div class="row">
             <img id="car" class="car" src="assets/images/f1car.png">
         </div>
     </div>

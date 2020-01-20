@@ -1,137 +1,12 @@
-.bubble {
-    max-width: 30px;
-    margin-left: auto;
-    background: rgb(236, 236, 236, 0.3);
-    padding: 20px;
-    color: #fff;
-    font-family: arial;
-    font-size: 0;
-    border: 2px;
-    border-radius: 5px;
-    height: 30px;
-    align-self: flex-start;
+#nav-logo {
+    height: 18.42vh;
+    padding-top: 2vh;
+    padding-left: 2.92vw;
 }
 
-.bubble.active {
-    text-align: center;
-    font-weight: 100;
-    font-size: 3vh;
-    min-height: 80vh;
-    max-width: 80%;
+#navbarRight {
+    justify-content: flex-end;
 }
-
-.roww {
-    width: 90vw;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.tri {
-    width: 0px;
-    height: 0px;
-    border-left: 15px solid rgb(236, 236, 236, 0.3);
-    border-right: 15px solid transparent;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    margin-top:1vh;
-}
-
-.mainbody {
-    height: 80%;
-    margin:0 3vw 5vh 3vw;
-    background: rgb(236, 236, 236, 0.3);
-}
-
-.nav-logo {
-    height: 100px;
-    padding-left: 40px;
-    padding-top: 20px;
-}
-
-.nav-left {
-    flex: 0.5;
-}
-
-.nav-right {
-    flex: 0.5;
-}
-
-.hiddenav {
-    visibility: hidden;
-}
-
-.hidden {
-    display: none;
-}
-
-.starterchng {
-    animation: diagonal 1.5s;
-}
-
-.road {
-    height: 100vh;
-    width: 6vw;
-    background: #00001a;
-    border-left: 0.5vw solid white;
-    border-right: 0.5vw solid white;
-    display: flex;
-    flex-direction: column;
-    margin-right: 0;
-    opacity:1;
-    box-shadow: 2px 2px 2px 2px black;
-}
-.car{
-    /* background-color:#CF0F0F; */
-    width:8vw;
-    height:auto;
-    position: fixed;
-    right:4.5vw;
-    top:5.5vh;
-    display: none;
-} 
-.startpos{
-    margin-left:84vw;
-    background-color: red;
-    width:6vw;
-    height:30vh;
-}
-.startimg{
-    width:8vw;
-}
-.marginr {
-    margin-right: 5vw;
-}
-
-.crossline {
-    width: 0.5vw;
-    height: 12vh;
-    margin-left: 2.5vw;
-    margin-top: 10vh;
-    background: #fff;
-}
-
-/* .car {
-    position: fixed;
-    height: 10vh;
-    width: 5vw;
-    top: 5.5vh;
-    right: 5.5vw;
-    /* background: red;
-    visibility: hidden;
-    align-self: flex-end;
-} */
-
-.start {
-display:block;
-}
-
-
-/* #f1car {
-    width: 50%;
-} */
 
 #starter {
     text-align: center;
@@ -146,75 +21,139 @@ display:block;
     width: 20%;
 }
 
-#starter h4 {
-    font-weight: 1000;
+.bubble {
+    width: 50%;
+    background: rgb(0, 0, 0, 0.3);
+    padding: 3.28vh 1.46vw;
+    color: #fff;
+    font-family: arial;
+    font-size: 0;
+    border: .32vh 0.14vw;
+    border-radius: 5px;
+    height: 4.92vh;
+}
+
+.active.bubble {
+    text-align: center;
+    font-weight: 100;
+    font-size: 3vh;
+    min-height: 80vh;
+    width: 100%;
+    /* max-width: 80%; */
+}
+
+.active.tri:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid rgb(0, 0, 0, 0.3);
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 71.9vw;
+    margin-top: 1vh;
+}
+
+.car {
+    width: 6vw;
+    height: 5.5vw;
+    position: fixed;
+    right: 1.2vw;
+    top: 5.5vh;
+    display: none;
+}
+
+.collapse.navbar-collapse a {
+    text-decoration: none;
+    color: white;
+}
+
+.collapse.navbar-collapse a:hover {
+    text-decoration: none;
+    color: white;
+    padding: 1rem !important;
+    border: 0.16vh solid white;
+    border-radius: .8vh;
+}
+
+.crossline {
+    width: 0.5vw;
+    height: 12vh;
+    margin-left: 2.5vw;
+    margin-top: 10vh;
+    background: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.hiddenav {
+    visibility: hidden;
+}
+
+.mainbody {
+    height: 80%;
+    margin: 0 3vw 5vh 3vw;
+    background: rgb(0, 0, 0, 0.3);
+}
+
+.road {
+    height: 100vh;
+    width: 6vw;
+    background: #00001a;
+    border-left: 0.5vw solid white;
+    border-right: 0.5vw solid white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    opacity: 1;
+    /* box-shadow: 0.32 0.14 black; */
+}
+
+.start {
+    display: block;
+}
+
+.starter-animate {
+    animation: diagonal 1.5s;
+}
+
+.startpos {
+    background-color: red;
+    width: 6vw;
+    height: 20vh;
+}
+
+.startpos-car {
+    width: 6vw;
+    height: 12.33vh;
+}
+
+.tri:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid rgb(0, 0, 0, 0.3);
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 1.6vw;
+}
+
+body {
+    background-size: cover;
+    background: linear-gradient(to bottom, rgb(24, 13, 13), rgb(90, 5, 5), rgb(24, 13, 13));
+    height: 100%;
 }
 
 @keyframes diagonal {
     0% {
-        transform: translatex(0px) translatey(0px);
+        transform: translatex(0vw) translatey(0vh);
         width: 100%;
     }
     100% {
-        transform: translatex(-220px) translatey(-90px);
+        transform: translatex(-16.10vw) translatey(-18.77vh);
         width: 50%;
     }
-}
-
-body {
-    height: 100%;
-    background-size: cover;
-    background: linear-gradient(to bottom, black, rgb(90, 5, 5), black);
-    margin: 0;
-}
-
-nav {
-    background: linear-gradient(black);
-    border-radius: 6px;
-    height: 20%;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-}
-
-a:hover {
-    text-decoration: none;
-    color: white;
-    padding: 1rem !important;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-.container{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    overflow: scroll;
-}
-.leftcol{
-    width:80vw;
-    height:auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-.content{
-    width:70vw;
-    height:80vh;
-    background-color: white;
-    margin-top:10vh;
-    border-top-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-}
-
-
-.centerline{
-    width:15%;
-    background-color: white;
-    height:10vh;
-    margin-bottom:10vh;
 }
