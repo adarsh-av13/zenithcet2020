@@ -38,20 +38,7 @@
     font-weight: 100;
     font-size: 3vh;
     min-height: 80vh;
-    width: 100%;
-    /* max-width: 80%; */
-}
-
-.active.tri:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    border-left: 20px solid rgb(0, 0, 0, 0.3);
-    border-right: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    margin-left: 71.9vw;
-    margin-top: 1vh;
+    width: 90%;
 }
 
 .car {
@@ -130,7 +117,7 @@
     height: 12.33vh;
 }
 
-.tri:before {
+.tri {
     content: "";
     width: 0px;
     height: 0px;
@@ -138,7 +125,8 @@
     border-right: 10px solid transparent;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    margin-left: 1.6vw;
+    margin-left: 0vw;
+    margin-top: 0.8vw;
 }
 
 body {
