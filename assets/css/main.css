@@ -21,6 +21,18 @@
     width: 20%;
 }
 
+.active.bubble {
+    text-align: center;
+    font-weight: 100;
+    font-size: 3vh;
+    min-height: 80vh;
+    width: 90%;
+}
+
+.active.bubblediv {
+    animation: slide-in 1s;
+}
+
 .bubble {
     width: 50%;
     background: rgb(0, 0, 0, 0.3);
@@ -31,14 +43,6 @@
     border: .32vh 0.14vw;
     border-radius: 5px;
     height: 4.92vh;
-}
-
-.active.bubble {
-    text-align: center;
-    font-weight: 100;
-    font-size: 3vh;
-    min-height: 80vh;
-    width: 90%;
 }
 
 .car {
@@ -121,12 +125,12 @@
     content: "";
     width: 0px;
     height: 0px;
-    border-left: 15px solid rgb(0, 0, 0, 0.3);
-    border-right: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    border-left: 20px solid rgb(0, 0, 0, 0.3);
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
     margin-left: 0vw;
-    margin-top: 0.8vw;
+    /* margin-top: 0.8vw; */
 }
 
 body {
@@ -143,5 +147,16 @@ body {
     100% {
         transform: translatex(-16.10vw) translatey(-18.77vh);
         width: 50%;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }

@@ -61,11 +61,11 @@ function checkSlide(e) {
         const slideInAt = (window.scrollY + window.innerHeight) - 550;
         //bottom
         const imageBottom = bubblediv.offsetTop + 609;
-        const isHalfShown = slideInAt > bubblediv.offsetTop;
+        const isHalfShown = slideInAt > bubblediv.offsetTop - 50;
         const isNotScrolledPast = window.scrollY < imageBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-            bubblediv.className = 'offset-1 col-9 bubblediv';
+            bubblediv.className = 'offset-1 col-9 active bubblediv';
             bubblediv.querySelector('.bubble').className = 'bubble active'
         } else {
             bubblediv.className = 'offset-9 col-1 bubblediv';
