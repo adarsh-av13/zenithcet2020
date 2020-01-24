@@ -21,28 +21,27 @@
     width: 20%;
 }
 
-.active.bubble {
-    text-align: center;
-    font-weight: 100;
-    font-size: 3vh;
-    min-height: 80vh;
-    width: 90%;
-}
-
 .active.bubblediv {
     animation: slide-in 1s;
+    opacity: 1;
 }
 
 .bubble {
-    width: 50%;
+    width: 90%;
     background: rgb(0, 0, 0, 0.3);
     padding: 3.28vh 1.46vw;
     color: #fff;
     font-family: arial;
-    font-size: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 3vh;
+    min-height: 80vh;
     border: .32vh 0.14vw;
     border-radius: 5px;
-    height: 4.92vh;
+}
+
+.bubblediv {
+    opacity: 0;
 }
 
 .car {
@@ -153,10 +152,8 @@ body {
 @keyframes slide-in {
     0% {
         transform: scale(0);
-        opacity: 0;
     }
     100% {
         transform: scale(1);
-        opacity: 1;
     }
 }

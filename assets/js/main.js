@@ -66,10 +66,8 @@ function checkSlide(e) {
 
         if (isHalfShown && isNotScrolledPast) {
             bubblediv.className = 'offset-1 col-9 active bubblediv';
-            bubblediv.querySelector('.bubble').className = 'bubble active'
         } else {
-            bubblediv.className = 'offset-9 col-1 bubblediv';
-            bubblediv.querySelector('.bubble').className = 'bubble'
+            bubblediv.className = 'offset-1 col-9 bubblediv';
         }
     });
 }
