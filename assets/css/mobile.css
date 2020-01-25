@@ -1,8 +1,11 @@
 @media only screen and (max-width: 768px) {
+    #institution {
+        font-size: 0.7rem;
+    }
+    #starter img {
+        width: 50%;
+    }
     .road {
         display: none;
-    }
-    .nav-logo {
-        height: 10vh;
     }
 }
