@@ -4,6 +4,8 @@ function loadHome() {
     var starter = document.getElementById("starter");
     var navbar = document.getElementById("mynav")
     var navRight = document.getElementById("navbarRight");
+    var starterTexts = document.querySelectorAll(".starter-text");
+    starterTexts.forEach(starter => starter.classList.add('hidden'));
     starter.classList.add("starter-animate");
     navbar.classList.remove('hiddenav');
     navRight.classList.remove('hiddenav');

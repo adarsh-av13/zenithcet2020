@@ -1,3 +1,8 @@
+#institution {
+    padding-top: 15vh;
+    font-weight: 900;
+}
+
 #nav-logo {
     height: 18.42vh;
     padding-top: 2vh;
@@ -21,6 +26,11 @@
     width: 20%;
 }
 
+#tagline {
+    margin-top: 5vh;
+    font-weight: lighter;
+}
+
 .active.bubblediv {
     animation: slide-in 1s;
     opacity: 1;
@@ -29,10 +39,11 @@
 .bubble {
     width: 90%;
     background: rgb(0, 0, 0, 0.3);
-    padding: 3.28vh 1.46vw;
+    padding: 10vh 5vw 8vh;
     color: #fff;
     font-family: arial;
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
     font-weight: 100;
     font-size: 3vh;
     min-height: 80vh;
@@ -42,6 +53,14 @@
 
 .bubblediv {
     opacity: 0;
+}
+
+.bubble-content {
+    margin-top: 5vh;
+}
+
+.bubble-headings {
+    text-align: center;
 }
 
 .car {
