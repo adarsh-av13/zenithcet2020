@@ -2,10 +2,28 @@
     #institution {
         font-size: 0.7rem;
     }
+    #nav-logo {
+        height: 9vh;
+    }
     #starter img {
         width: 50%;
     }
+    .navbar-toggler {
+        color: white;
+    }
+    .carrow,
+    .carstart,
     .road {
         display: none;
+    }
+    @keyframes diagonal {
+        0% {
+            transform: translatex(0vw) translatey(0vh);
+            width: 100%;
+        }
+        100% {
+            transform: translatex(-1.9vw) translatey(-8.8vh);
+            width: 35%;
+        }
     }
 }
