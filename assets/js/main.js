@@ -67,9 +67,9 @@ function checkSlide(e) {
         const isNotScrolledPast = window.scrollY < imageBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-            bubblediv.className = 'offset-1 col-9 active bubblediv';
+            bubblediv.className = 'offset-md-1 col-md-9 col-sm-12 active bubblediv';
         } else {
-            bubblediv.className = 'offset-1 col-9 bubblediv';
+            bubblediv.className = 'offset-md-1 col-md-9 col-sm-12 bubblediv';
         }
     });
 }
