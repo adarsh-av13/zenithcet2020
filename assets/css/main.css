@@ -3,10 +3,19 @@
     font-weight: 900;
 }
 
+#mynav{
+    background: white;
+}
+
 #nav-logo {
-    height: 18.42vh;
+    height: 10.42vh;
     padding-top: 2vh;
-    padding-left: 2.92vw;
+    /* padding-left: 2.92vw; */
+}
+
+
+#nav-logo2 {
+    height: 5.42vh;
 }
 
 #navbarRight {
@@ -16,16 +25,27 @@
 #starter {
     text-align: center;
     color: white;
-    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.8);
+}
+
+.starter-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
 
 #starter img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 20%;
 }
 
+#scrollbody{
+    width: 100%;
+    /* overflow: scroll; */
+    /* position: relative; */
+}
 #tagline {
     margin-top: 5vh;
     font-weight: lighter;
@@ -38,7 +58,8 @@
 
 .bubble {
     width: 90%;
-    background: rgb(0, 0, 0, 0.3);
+    background: #b509097a;
+    box-shadow: 1px 1px 1px 1px #fff;
     padding: 10vh 5vw 8vh;
     color: #fff;
     font-family: 'Roboto Mono', monospace;
@@ -49,10 +70,12 @@
     min-height: 80vh;
     border: .32vh 0.14vw;
     border-radius: 5px;
+    border-top-right-radius: 0;
 }
 
 .bubblediv {
     opacity: 0;
+    margin-top: 20vh;
 }
 
 .bubble-content {
@@ -65,23 +88,23 @@
 
 .car {
     width: 6vw;
-    height: 5.5vw;
+    height: 12.33vh;
     position: fixed;
-    right: 2vw;
+    right: 2.2vw;
     top: 5.5vh;
     display: none;
 }
 
 .collapse.navbar-collapse a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .collapse.navbar-collapse a:hover {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 1rem !important;
-    border: 0.16vh solid white;
+    border: 0.16vh solid black;
     border-radius: .8vh;
 }
 
@@ -98,26 +121,39 @@
 }
 
 .hiddenav {
-    visibility: hidden;
+    opacity: 0;
 }
 
 .mainbody {
     height: 80%;
-    margin: 0 3vw 5vh 3vw;
-    background: rgb(0, 0, 0, 0.3);
+    margin: 5vh 3vw 5vh 3vw;
+    border-radius: 1vh;
+    background: rgb(0, 0, 0, 0.8);
+    box-shadow: 1px 1px 1px 1px #fff;
+
 }
 
+.memberbox {
+    border: 0.2vh solid rgb(255, 255, 255, 0.3);
+    border-bottom-right-radius: 2vh;
+    margin-bottom: 2vh;
+    height: 15vh;
+    align-self: center;
+}
+
+.nav-block {
+    animation: fade-in 1.5s;
+}
 .road {
     height: 100vh;
     width: 6vw;
-    background: #00001a;
+    background: black;
     border-left: 0.5vw solid white;
     border-right: 0.5vw solid white;
     display: flex;
     flex-direction: column;
     margin-right: 0;
     opacity: 1;
-    /* box-shadow: 0.32 0.14 black; */
 }
 
 .start {
@@ -125,7 +161,7 @@
 }
 
 .starter-animate {
-    animation: diagonal 1.5s;
+    animation: fade-out 1.5s;
 }
 
 .startpos {
@@ -140,11 +176,21 @@
     height: 12.33vh;
 }
 
+/* .teambox {
+    border: 0.2vh solid white;
+    border-radius: 0.2vh;
+    height: 20vh;
+}  */
+
+.teamcontainer {
+    background: rgb(0, 0, 0, 0.3);    
+    margin: 0;
+}
 .tri {
     content: "";
     width: 0px;
     height: 0px;
-    border-left: 20px solid rgb(0, 0, 0, 0.3);
+    border-left: 20px solid rgb(0, 0, 0, 0.8);
     border-right: 20px solid transparent;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
@@ -153,19 +199,29 @@
 }
 
 body {
-    background-size: cover;
-    background: linear-gradient(to bottom, rgb(24, 13, 13), rgb(90, 5, 5), rgb(24, 13, 13));
+    /* background-size: cover;   */
+    background: black;
     height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
 }
 
-@keyframes diagonal {
+@keyframes fade-in {
     0% {
-        transform: translatex(0vw) translatey(0vh);
-        width: 100%;
+        opacity: 0;
     }
     100% {
-        transform: translatex(-16.10vw) translatey(-18.77vh);
-        width: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
