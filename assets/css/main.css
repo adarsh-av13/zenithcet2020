@@ -61,6 +61,11 @@
     opacity: 1;
 }
 
+.back-to-top {
+    color: white;
+    background: none;
+    border: none;
+}
 .bubble {
     width: 90%;
     background: rgb(255, 255, 255, 0.1);
@@ -120,6 +125,42 @@
     background: #fff;
 }
 
+.footer-icons {
+    font-size: 36px;
+    padding-right: 10px;
+}
+
+.footer-copyright {
+    background: rgb(0, 0, 0, 0.1);
+    padding: 1vh 2vw;
+}
+
+.footer-copyright a{
+    color: white;
+}
+
+.footer-copyright a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icons:hover {
+    font-size: 40px;
+}
+
+.footer-info {
+  padding: 5vh 0;
+}
+
+.footer-page {
+    background: #500;
+    color: white;
+}
+
+.footer-page a{
+    color: white;
+}
+
 .hidden {
     display: none;
 }
@@ -134,21 +175,20 @@
     border: 2px solid white;
     border-radius: 1vh;
     background: rgb(0, 0, 0, 0.8);
-    /* box-shadow: 1px 1px 1px 1px #fff; */
-
 }
 
 .memberbox {
     border: 0.2vh solid rgb(255, 255, 255, 0.3);
-    border-bottom-right-radius: 2vh;
-    margin-bottom: 2vh;
-    height: 15vh;
-    align-self: center;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
 }
 
 .nav-block {
     animation: fade-in 1.5s;
 }
+
+
 .road {
     height: 100vh;
     width: 6vw;
@@ -181,16 +221,24 @@
     height: 12.33vh;
 }
 
-/* .teambox {
-    border: 0.2vh solid white;
-    border-radius: 0.2vh;
-    height: 20vh;
-}  */
+.team-heading {
+    display: inline-block;
+    font-size: 3rem;
+    background: maroon;
+}
+
+.teambox {
+    margin-top: 5vh;
+} 
 
 .teamcontainer {
-    background: rgb(0, 0, 0, 0.3);    
-    margin: 0;
+    background: rgb(0, 0, 0, 0.3);
+    color: white;    
+    margin-top: 5vh;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
 .tri {
     content: "";
     width: 0px;

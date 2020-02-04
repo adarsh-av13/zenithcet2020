@@ -15,6 +15,7 @@
     <script src="dependencies/jquery/min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/351958393c.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </head>
 
@@ -27,9 +28,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarRight">
             <a class="nav-item nav-link" href="#main">Home</a>
-            <a class="nav-item nav-link" href="#">Default</a>
-            <a class="nav-item nav-link" href="#">Default</a>
-            <a class="nav-item nav-link" href="#">Default</a>
+            <a class="nav-item nav-link" href="#aboutus">About</a>
+            <a class="nav-item nav-link" href="#">Gallery</a>
+            <a class="nav-item nav-link" href="#">Events</a>
+            <a class="nav-item nav-link" href="team.html">The Team</a>
         </div>
     </nav>
     <div id="starter" class="starter-flex" onclick="loadHome()">
@@ -105,62 +107,43 @@
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-md-9 col-sm-11 bubblediv">
-                <div class="d-flex flex-wrap">
-                    <div class="bubble"></div>
-                    <!-- <div class="tri"></div> -->
-                </div>
-            </div>
-            <div class="offset-1 road">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-md-9 col-sm-11 bubblediv">
-                <div class="d-flex flex-wrap">
-                    <div class="bubble"></div>
-                    <!-- <div class="tri"></div> -->
-                </div>
-            </div>
-            <div class="offset-1 road">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-md-9 col-sm-11 bubblediv">
-                <div class="d-flex flex-wrap">
-                    <div class="bubble"></div>
-                    <!-- <div class="tri"></div> -->
-                </div>
-            </div>
-            <div class="offset-1 road">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
+                <!-- <div class="crossline"></div> -->
+                <!-- <div class="crossline"></div> -->
             </div>
         </div>
         <div class="row carrow">
             <img id="car" class="car" src="assets/images/f1car.png">
         </div>
     </div>
-    <footer>
-        
+    <!-- Footer -->
+    <footer class="hidden footer-page">
+            <div class="footer-info d-flex justify-content-around">
+                <div class="footer-contact">
+                    <h3>Contact :</h3>
+                        <a href="tel: +918139004877">+91 8139004877</p>
+                        <a href="mailto:zenithmotorsport@cet.ac.in">zenithmotorsport@cet.ac.in</a>
+                </div>
+                <div class="footer-social d-flex align-items-center">
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/Zenith-Motorsport-CET-2301518046793522/"><i class='fab fa-facebook'></i></a>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="https://instagram.com/zenithmotorsportcet?igshid=1wf889exsezqn"><i class='fab fa-instagram'></i></a>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="#"><i class='fab fa-linkedin'></i></a>
+                    </div>
+                </div>    
+                <div class="footer-icons d-flex align-items-center">
+                        <button class="back-to-top" onclick="topFunction()"><i class="fa fa-toggle-up"></i></button>
+                </div>  
+            </div>
+            
+            <div class="footer-copyright text-center" >© 2020 Copyright:&nbsp; 
+                <a href="https:zenithmotorsportcet.in">Zenith Motor Sport CET</a>
+            </div> 
     </footer>
+
 </body>
 
 </html>
