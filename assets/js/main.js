@@ -19,9 +19,11 @@ window.onload = () => {
     var hiddens = document.querySelectorAll(".hidden");
 
     for (var i in navigatorsProperties) {
-        starter.addEventListener(navigatorsProperties[i], function() {
-            hiddens.forEach((hidden) => hidden.classList.remove('hidden'));
-            starter.classList.add('hidden');
+        starter.addEventListener(navigatorsProperties[i], function(e) {
+            if(e.animationName == 'fade-out') {
+                hiddens.forEach((hidden) => hidden.classList.remove('hidden'));
+                starter.classList.add('hidden');
+            }    
         }, false);
     }
 };
@@ -60,7 +62,7 @@ function checkSlide(e) {
         const slideInAt = (window.scrollY + window.innerHeight) - 550;
         //bottom
         const imageBottom = bubblediv.offsetTop + 609;
-        const isHalfShown = slideInAt > bubblediv.offsetTop - 100;
+        const isHalfShown = slideInAt > bubblediv.offsetTop - 50;
         const isNotScrolledPast = window.scrollY < imageBottom;
 
         if (isHalfShown && isNotScrolledPast) {

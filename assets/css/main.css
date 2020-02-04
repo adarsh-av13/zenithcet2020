@@ -1,3 +1,7 @@
+#blinker-text{
+    animation: blink 2s infinite;
+}
+
 #institution {
     padding-top: 15vh;
     font-weight: 900;
@@ -27,7 +31,8 @@
     color: white;
     width: 100%;
     height: 100vh;
-    background: rgb(0, 0, 0, 0.8);
+    background: url("../images/starterbg1.jpg");
+    cursor: pointer;
 }
 
 .starter-flex{
@@ -58,8 +63,7 @@
 
 .bubble {
     width: 90%;
-    background: #b509097a;
-    box-shadow: 1px 1px 1px 1px #fff;
+    background: rgb(255, 255, 255, 0.1);
     padding: 10vh 5vw 8vh;
     color: #fff;
     font-family: 'Roboto Mono', monospace;
@@ -75,7 +79,7 @@
 
 .bubblediv {
     opacity: 0;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
 }
 
 .bubble-content {
@@ -126,10 +130,11 @@
 
 .mainbody {
     height: 80%;
-    margin: 5vh 3vw 5vh 3vw;
+    margin: 5vh 10vw 5vh 10vw;
+    border: 2px solid white;
     border-radius: 1vh;
     background: rgb(0, 0, 0, 0.8);
-    box-shadow: 1px 1px 1px 1px #fff;
+    /* box-shadow: 1px 1px 1px 1px #fff; */
 
 }
 
@@ -190,7 +195,7 @@
     content: "";
     width: 0px;
     height: 0px;
-    border-left: 20px solid rgb(0, 0, 0, 0.8);
+    border-left: 20px solid rgb(255,255,255,0.1);
     border-right: 20px solid transparent;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
@@ -225,9 +230,21 @@ body {
     }
 }
 
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes slide-in {
     0% {
-        transform: scale(0);
+        transform: scale(0.5);
     }
     100% {
         transform: scale(1);
