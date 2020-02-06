@@ -6,10 +6,8 @@ function loadHome() {
     var starterTexts = document.querySelectorAll(".starter-text");
     starterTexts.forEach(starter => starter.classList.add('hidden'));
     starter.classList.add("starter-animate");
-    // starter.classList.remove("starter-flex");
     navbar.classList.add('nav-block');
     navbar.classList.remove('hiddenav');
-
 }
 
 var navigatorsProperties = ['animationend', 'webkitAnimationEnd'];
@@ -17,28 +15,37 @@ var navigatorsProperties = ['animationend', 'webkitAnimationEnd'];
 window.onload = () => {
     var starter = document.getElementById("starter");
     var hiddens = document.querySelectorAll(".hidden");
-
-    for (var i in navigatorsProperties) {
-        starter.addEventListener(navigatorsProperties[i], function(e) {
-            if(e.animationName == 'fade-out') {
-                hiddens.forEach((hidden) => hidden.classList.remove('hidden'));
-                starter.classList.add('hidden');
-            }    
-        }, false);
+    var navbar = document.getElementById("mynav");
+    if (sessionStorage.getItem('wasVisited')) {
+        starter.classList.add('hidden');
+        navbar.classList.remove('hiddenav');
+        hiddens.forEach((hidden) => hidden.classList.remove('hidden'));
+        
+    }
+    else {
+        for (var i in navigatorsProperties) {
+            starter.addEventListener(navigatorsProperties[i], function (e) {
+                if (e.animationName == 'fade-out') {
+                    hiddens.forEach((hidden) => hidden.classList.remove('hidden'));
+                    starter.classList.add('hidden');
+                    sessionStorage.setItem('wasVisited', 1);
+                }
+            }, false);
+        }
     }
 };
 
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  } 
+}
 
 function debounce(func, wait = 0, immediate = true) {
     var timeout;
-    return function() {
+    return function () {
         var context = this,
             args = arguments;
-        var later = function() {
+        var later = function () {
             timeout = null;
             if (!immediate) func.apply(context, args);
         };
@@ -53,13 +60,15 @@ function checkSlide(e) {
     const f1car = document.getElementById("car");
     const start = document.getElementById("start");
     const startimg = document.getElementById("startimg");
-    if (window.scrollY > (start.offsetTop - 25)) {
+    const end = document.getElementById("end");
+    if (window.scrollY > (start.offsetTop - 130)) {
         f1car.className = "car start";
         startimg.className = "hidden";
     } else {
         f1car.className = "car";
         startimg.className = "startpos-car";
     }
+    console.log(end.offsetTop,window.scrollY);
     const bubbledivs = document.querySelectorAll('.bubblediv');
     bubbledivs.forEach(bubblediv => {
         //halfway
@@ -71,10 +80,7 @@ function checkSlide(e) {
 
         if (isHalfShown && isNotScrolledPast) {
             bubblediv.className = 'offset-md-1 col-md-9 col-sm-12 active bubblediv';
-        }    
-        // } else {
-        //     bubblediv.className = 'offset-md-1 col-md-9 col-sm-12 bubblediv';
-        // }
+        }
     });
 }
 

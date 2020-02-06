@@ -8,7 +8,7 @@
 }
 
 #mynav{
-    background: white;
+    background: #500;
 }
 
 #nav-logo {
@@ -31,7 +31,7 @@
     color: white;
     width: 100%;
     height: 100vh;
-    background: url("../images/starterbg1.jpg");
+    background: url("../images/starterbg.jpg");
     cursor: pointer;
 }
 
@@ -62,9 +62,11 @@
 }
 
 .back-to-top {
-    color: white;
+    color: rgb(255,255,255,0.5);
     background: none;
     border: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 .bubble {
     width: 90%;
@@ -100,20 +102,20 @@
     height: 12.33vh;
     position: fixed;
     right: 2.2vw;
-    top: 5.5vh;
+    top: 20.5vh;
     display: none;
 }
 
 .collapse.navbar-collapse a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .collapse.navbar-collapse a:hover {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 1rem !important;
-    border: 0.16vh solid black;
+    border: 0.16vh solid white;
     border-radius: .8vh;
 }
 
@@ -125,13 +127,48 @@
     background: #fff;
 }
 
-.footer-icons {
-    font-size: 36px;
-    padding-right: 10px;
+.endpos {
+    background-image: url('../images/end.png');
+    background-size: 6vw 15vh;
+    width: 6vw;
+    height: 15vh;
+    float: right;
+    margin-right: 2.2vw;
 }
 
+.footer-icons {
+    font-size: 2rem;
+    display: inline-block;
+    padding-top: 0.5vh;
+    padding-right: 5vw;
+    height: 5.25vh;
+    width: 2.34vw;
+}
+
+.footer-icons-large {
+    font-size: 2rem;
+    border: 3px solid rgb(255, 255, 255, 0.5);
+    border-radius: 5px;
+    float: right;
+    margin-right: -5vw;
+    margin-top: 64vh;
+    animation: padding-rem 2s infinite;
+}
+
+.footer-contact {
+    padding-top: 5vh;
+}
+
+.footer-contact h3{
+    background: #500;
+    margin-bottom: 10vh;
+}
+
+.footer-contact p {
+    margin-bottom: 0;
+}
 .footer-copyright {
-    background: rgb(0, 0, 0, 0.1);
+    background: #500;
     padding: 1vh 2vw;
 }
 
@@ -145,15 +182,18 @@
 }
 
 .footer-icons:hover {
-    font-size: 40px;
+    /* font-size: 40px; */
 }
 
 .footer-info {
-  padding: 5vh 0;
+    background: rgb(0, 0, 0, 0.9);
+    padding: 0 0 5vh 0;
 }
 
 .footer-page {
-    background: #500;
+    background: url("../images/footerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
 }
 
@@ -169,6 +209,10 @@
     opacity: 0;
 }
 
+.link-text {
+  padding-top: 1.5vh;
+}
+
 .mainbody {
     height: 80%;
     margin: 5vh 10vw 5vh 10vw;
@@ -179,9 +223,47 @@
 
 .memberbox {
     border: 0.2vh solid rgb(255, 255, 255, 0.3);
-    width: 50vh;
-    height: 50vh;
+    width: 40vh;
+    height: 40vh;
     border-radius: 50%;
+}
+
+.memberbox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.memberbox:hover {
+    cursor: pointer;
+}
+
+.memberbox:hover .memberdeets {
+    opacity: 1;
+}
+
+.memberdeets {
+    position: absolute; 
+    width: 40vh;
+    height: 20vh;
+    margin-top: -14vh;
+    border-bottom-right-radius: 40vh;
+    border-bottom-left-radius: 40vh;
+    font-size: 1.5rem; 
+    /* opacity: 0; */
+    background: rgb(0, 0, 0, 0.8);
+}
+
+.membername {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0; 
+}
+
+
+.memberpos {
+    font-size: 0.8rem;
 }
 
 .nav-block {
@@ -251,6 +333,15 @@
     /* margin-top: 0.8vw; */
 }
 
+.underline {
+    text-decoration: underline;
+}
+.vertical-rule {
+    height: 8vh;
+    padding: 0 1vw;
+    border-left: 0.2vw solid white;
+}
+
 body {
     /* background-size: cover;   */
     background: black;
@@ -296,5 +387,11 @@ body {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes padding-rem {
+    50% {
+        border-color: transparent;
     }
 }
