@@ -242,10 +242,9 @@
     position: absolute; 
     width: 40vh;
     height: 20vh;
-    margin-top: -14vh;
+    margin-top: -12vh;
     border-bottom-right-radius: 40vh;
     border-bottom-left-radius: 40vh;
-    font-size: 1.5rem; 
     background: rgb(0, 0, 0, 0.8);
 }
 
@@ -258,6 +257,8 @@
 
 .memberpos {
     font-size: 0.8rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .mentorbox {
@@ -320,7 +321,6 @@
 .nav-block {
     animation: fade-in 1.5s;
 }
-
 
 .road {
     height: 100vh;
@@ -390,6 +390,25 @@ body {
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
     /* overflow: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    margin: 20vh 0;
+    width: 20%;
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+  }
+  
+ul li {
+    border: 0.2px solid rgb(0, 0, 0, 0.8);
+    margin-top: -1px;
+    background-color: #500;
+    padding: 12px;
 }
 
 @keyframes fade-in {
