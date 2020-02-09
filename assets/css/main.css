@@ -154,6 +154,26 @@
     animation: padding-rem 2s infinite;
 }
 
+.footer-icons-large:hover {
+    cursor: pointer;
+}
+
+.footer-icons-large-teams {
+    font-size: 2rem;
+    border: 0.47vh 0.21vw;
+    border-style: solid;
+    border-color:rgb(255, 255, 255, 0.5);
+    border-radius: 0.79vh;
+    float: right;
+    margin-right: 2vw;
+    margin-top: 64vh;
+    animation: padding-rem 2s infinite;
+}
+
+.footer-icons-large-teams:hover {
+    cursor: pointer;
+}
+
 .footer-contact {
     padding-top: 5vh;
 }
@@ -417,8 +437,9 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 ul {
-    margin: 20vh 0;
+    margin: 50vh 0;
     width: 30%;
     list-style-type: none;
     padding: 0;
@@ -431,6 +452,13 @@ ul li {
     margin-top: -1px;
     background-color: #500;
     padding: 12px;
+    height: 5vw;
+    padding: 0;
+}
+
+li img {
+    width: 5vw;
+    border: 0.5vh solid black;
 }
 
 @keyframes fade-in {
