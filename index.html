@@ -22,20 +22,7 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark mynav hiddenav hidden" id="mynav">
-        <a class="navbar-brand" class="navbarLeft" href="#"><img id="nav-logo" src="assets/images/nav-logo1w.png"></a>
-        <a class="navbar-brand" class="navbarLeft" href="#"><img id="nav-logo2" src="assets/images/nav-logo2w.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRight"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarRight">
-            <a class="nav-item nav-link" href="index.html">Home</a>
-            <a class="nav-item nav-link" href="#aboutus">About</a>
-            <a class="nav-item nav-link" href="#">Gallery</a>
-            <a class="nav-item nav-link" href="#">Events</a>
-            <a class="nav-item nav-link" href="team.html">The Team</a>
-            <a class="nav-item nav-link" href="#myfooter">Contact</a>
-        </div>
+        <script src="assets/js/nav.js"></script>
     </nav>
     <div id="starter" class="starter-flex" onclick="loadHome()">
         <img id="starter-logo" src="assets/images/starterlogo.png">
@@ -47,13 +34,13 @@
     <div id="main" class="mainbody hidden">
     </div>
     <div id="scrollbody" class="hidden container-fluid">
-        <div class="row carstart">
+        <!-- <div class="row carstart">
             <div id="start" class="offset-11 startpos">
                 <img id="startimg" class="startpos-car" src="assets/images/f1car.png">
             </div>
-        </div>
+        </div> -->
         <div class="row">
-            <div id="aboutus" class="offset-1 col-md-9 col-sm-11 bubblediv">
+            <div id="aboutus" class="offset-3 col-md-9 col-sm-11 bubblediv">
                 <div class="d-flex flex-wrap">
                     <div class="bubble">
                         <h2 class="bubble-headings">About Us</h2>
@@ -68,17 +55,17 @@
                     <!-- <div class="tri"></div> -->
                 </div>
             </div>
-            <div class="offset-1 road">
+            <!-- <div class="offset-1 road">
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
-            </div>
+            </div> -->
         </div>
 
         <div class="row">
-            <div class="offset-1 col-md-9 col-sm-11 bubblediv">
+            <div class="offset-3 col-md-9 col-sm-11 bubblediv">
                 <div class="d-flex flex-wrap">
                     <div class="bubble">
                         <h2 class="bubble-headings">MISSION</h2>
@@ -96,16 +83,16 @@
                     <!-- <div class="tri"></div> -->
                 </div>
             </div>
-            <div class="offset-1 road">
+            <!-- <div class="offset-1 road">
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
-            </div>
+            </div> -->
         </div>
         <div class="row">
-            <div class="offset-1 col-md-9 col-sm-11 bubblediv">
+            <div class="offset-3 col-md-9 col-sm-11 bubblediv">
                 <div class="d-flex flex-wrap">
                     <div class="bubble" style="background: none;">
                         <h2 class="bubble-headings">OUR MENTORS</h2>
@@ -118,7 +105,6 @@
                                 </div>
                                 <div class="mentordeets">
                                     <p class="mentorname">Dr Jiji C V</p>
-                                    <p class="mentorpos">Member Pos</p>
                                 </div>
                             </div>
                             <div class="mentorbox">
@@ -129,7 +115,6 @@
                                 </div>
                                 <div class="mentordeets">
                                     <p class="mentorname">Dr A Samson</p>
-                                    <p class="mentorpos">Member Pos</p>
                                 </div>
                             </div>
                             <div class="mentorbox">
@@ -140,18 +125,16 @@
                                 </div>
                                 <div class="mentordeets">
                                     <p class="mentorname">Prof. Sasi N</p>
-                                    <p class="mentorpos">Member Pos</p>
                                 </div>
                             </div>
                             <div class="mentorbox">
-                                <img src="assets/images/member.jpg">
+                                <img src="assets/images/mentor.jpg">
                                 <div class="mentordeets-fixed">
                                     <p class="mentorname">MEMBER NAME</p>
                                     <p class="mentorpos">Member Pos</p>
                                 </div>
                                 <div class="mentordeets">
                                     <p class="mentorname">MEMBER NAME</p>
-                                    <p class="mentorpos">Member Pos</p>
                                 </div>
                             </div>
                         </div>
@@ -160,60 +143,75 @@
                     <!-- <div class="tri"></div> -->
                 </div>
             </div>
-            <div class="offset-1 road">
+            <!-- <div class="offset-1 road">
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
-            </div>
+            </div> -->
         </div>
         <div class="row">
-            <div class="offset-1 col-md-9 col-sm-11 bubblediv">
+            <div class="offset-3 col-md-9 col-sm-11 bubblediv">
                 <div class="d-flex flex-wrap">
-                    <div class="bubble" style="background: none; width: 100%">
+                    <div class="bubble" style="background: none;">
                         <h2 class="bubble-headings">THE EXECOM</h2>
                         <div class="teambox d-flex">
                             <div class="memberbox">
-                                <img src="assets/images/member.jpg">
-                                <div class="memberdeets">
+                                <img src="assets/images/members/aslamkhan.jpg">
+                                <div class="memberdeets-fixed">
                                     <p class="membername">ASLAM KHAN P V</p>
                                     <p class="memberpos">Team Captain</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
                                 </div>
+                                <div class="memberdeets">
+                                    <p class="membername">ASLAM KHAN P V</p>
+                                </div>
                             </div>
                             <div class="memberbox">
-                                <img src="assets/images/member.jpg">
-                                <div class="memberdeets">
+                                <img src="assets/images/members/anto.jpg">
+                                <div class="memberdeets-fixed">
                                     <p class="membername">A ANTO NIGIN</p>
                                     <p class="memberpos">Manager</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
                                 </div>
+                                <div class="memberdeets">
+                                    <p class="membername">A ANTO NIGIN</p>
+                                </div>
                             </div>
                             <div class="memberbox">
                                 <img src="assets/images/member.jpg">
-                                <div class="memberdeets">
+                                <div class="memberdeets-fixed">
                                     <p class="membername">ANDRIA ALEX THOMAS</p>
                                     <p class="memberpos">Sponsorship and Marketing Head</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
+                                </div>
+                                <div class="memberdeets">
+                                    <p class="membername">ANDRIA ALEX THOMAS</p>
                                 </div>
                             </div>
                         </div>
                         <div class="teambox d-flex">
                             <div class="memberbox">
-                                <img src="assets/images/member.jpg">
-                                <div class="memberdeets">
+                                <img src="assets/images/members/surya.jpg">
+                                <div class="memberdeets-fixed">
                                     <p class="membername">P SURYANARAYAN NAIR</p>
                                     <p class="memberpos">Technical Head</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
                                 </div>
+                                <div class="memberdeets">
+                                    <p class="membername">P SURYANARAYAN NAIR</p>
+                                </div>
                             </div>
                             <div class="memberbox">
                                 <img src="assets/images/member.jpg">
-                                <div class="memberdeets">
+                                <div class="memberdeets-fixed">
                                     <p class="membername">SREERAJ R</p>
                                     <p class="memberpos">Production Head</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
+                                </div>
+                                <div class="memberdeets">
+                                    <p class="membername">SREERAJ R</p>
                                 </div>
                             </div>
                         </div>
@@ -222,17 +220,17 @@
                     <!-- <div class="tri"></div> -->
                 </div>
             </div>
-            <div class="offset-1 road" style="height: 120vh">
+            <!-- <div class="offset-1 road" style="height: 120vh">
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
-            </div>
+            </div> -->
         </div>
         <div class="row">
-            <div class="offset-1 col-md-9 col-sm-11 bubblediv">
+            <div class="offset-3 col-md-9 col-sm-11 bubblediv">
                 <div class="d-flex flex-wrap">
                     <div class="bubble">
                         <h2 class="bubble-headings">College of Engineering Trivandrum</h2>
@@ -248,24 +246,24 @@
                     <!-- <div class="tri"></div> -->
                 </div>
             </div>
-            <div class="offset-1 road">
+            <!-- <div class="offset-1 road">
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
                 <div class="crossline"></div>
-            </div>
+            </div> -->
         </div>
-        <div class="row carrow">
+        <!-- <div class="row carrow">
             <img id="car" class="car" src="assets/images/f1car.png">
-        </div>
+        </div> -->
     </div>
     <!-- Footer -->
     <footer id="myfooter" class="hidden footer-page">
         <div class="footer-info">
-            <div id="end" class="endpos">
-            </div>
-            <div class="footer-icons-large" onclick="topFunction()" title="Back to Top">
+            <!-- <div id="end" class="endpos">
+            </div> -->
+            <div class="footer-icons-large-teams" onclick="topFunction()" title="Back to Top">
                 <button class="back-to-top"><i class="fas fa-chevron-up"></i></button>
             </div>
             <div class="offset-2 footer-contact">

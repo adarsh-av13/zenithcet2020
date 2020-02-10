@@ -69,7 +69,7 @@
     margin-bottom: 0.63vh;
 }
 .bubble {
-    width: 90%;
+    width: 100%;
     background: rgb(255, 255, 255, 0.1);
     padding: 10vh 5vw 8vh;
     color: #fff;
@@ -78,6 +78,7 @@
     font-weight: 100;
     font-size: 3vh;
     min-height: 80vh;
+    margin: 20vh 0;
     border: .32vh 0.14vw;
     border-radius: 0.79vh 0.36vw;
 }
@@ -216,6 +217,16 @@
     color: white;
 }
 
+.gallery-box img {
+    vertical-align: middle;
+    width: 80%;
+    border-width: 1vh 0.5vw;
+    border-color: white;
+    border-bottom-color: white;
+    border-style: solid;
+    border-bottom: 3vh solid white;
+}
+
 .hidden {
     display: none;
 }
@@ -237,74 +248,93 @@
 }
 
 .memberbox {
-    border: 0.2vh solid rgb(255, 255, 255, 0.3);
-    width: 40vh;
-    height: 40vh;
+    width: 20vh;
+    height: 20vh;
     border-radius: 50%;
+    text-align: center;
 }
 
+.memberbox p {
+    margin-bottom: 0;
+}
 .memberbox img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     position: relative;
+    margin-bottom: 2vh;
 }
 
 .memberbox:hover {
     cursor: pointer;
+    animation: scale-up 0.5s forwards;
 }
 
-.memberbox:hover .memberdeets {
-    animation: complete-circle 0.1s forwards;
-    
+.memberbox:hover .memberdeets{
+  display: block;
 }
 
-.memberbox:hover .membername {
-    font-size: 1.5rem;
-}
-.memberbox:hover .memberpos {
-    font-size: 1rem;
-
+.memberbox:hover .memberpos{
+  display: block;
 }
 
-.memberbox:hover .memberphone {
-    display: block;
+.memberbox:hover .memberphone{
+  display: block;
 }
 
+.memberbox:hover .memberdeets-fixed .membername {
+    display: none;
+}
+
+.membercontainer {
+    justify-content: space-between;
+    margin-top: 15vh;
+}
 .memberdeets {
-    position: absolute; 
     text-align: center;
-    width: 40vh;
-    height: 20vh;
-    margin-top: -12vh;
+    position: absolute;
+    overflow: hidden; 
+    width: 20vh;
+    height: 10vh;
+    margin-top: -15vh;
     border-bottom-right-radius: 40vh;
     border-bottom-left-radius: 40vh;
-    background: rgb(0, 0, 0, 0.8);
+    font-size: 0.75rem; 
+    display:none;
+    background: rgb(0, 0, 0, 0.2);
 }
 
 .membername {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0; 
+    font-size: 0.7rem;
 }
 
-
 .memberpos {
-    font-size: 0.8rem;
-    margin-left: 2vw;
-    margin-bottom: 0; 
-    margin-right: 2vw;
+    font-size: 0.5rem;
 }
 
 .memberphone {
-    display: none;
-}
-.memberphone a{
-    color: white;
+    font-size: 0.5rem;
 }
 
+.memberdeets-fixed .membername {
+    font-size: 1rem;
+}
+
+.memberdeets-fixed .memberpos,.memberphone {
+    display: none;
+}
+.memberdeets-fixed {
+    height: 5vh;
+}
+/* .memberdeets-fixed .memberpos {
+    font-size: 0.8rem;
+}
+
+.memberdeets-fixed memberphone {
+    font-size: 0.8rem;
+} */
+
 .mentorbox {
-    border: 0.2vh solid rgb(255, 255, 255, 0.3);
     width: 20vh;
     height: 20vh;
     border-radius: 50%;
@@ -331,7 +361,7 @@
   display: block;
 }
 
-.mentorbox:hover .mentordeets-fixed {
+.mentorbox:hover .mentordeets-fixed .mentorname {
     display: none;
 }
 
@@ -353,11 +383,15 @@
 }
 
 .mentorname {
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .mentorpos {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
+}
+
+.mentorphone {
+    font-size: 0.5rem;
 }
 
 .nav-block {
@@ -404,6 +438,7 @@
 
 .teambox {
     margin-top: 5vh;
+    margin-bottom: 25vh;
     justify-content: space-evenly;
 } 
 
@@ -458,6 +493,7 @@ ul li {
 
 li img {
     width: 5vw;
+    height: 100%;
     border: 0.5vh solid black;
 }
 

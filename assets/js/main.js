@@ -56,14 +56,13 @@ function checkSlide(e) {
     const start = document.getElementById("start");
     const startimg = document.getElementById("startimg");
     const end = document.getElementById("end");
-    if (window.scrollY > (start.offsetTop - 130)) {
-        f1car.className = "car start";
-        startimg.className = "hidden";
-    } else {
-        f1car.className = "car";
-        startimg.className = "startpos-car";
-    }
-    console.log(end.offsetTop,window.scrollY);
+    // if (window.scrollY > (start.offsetTop - 130)) {
+    //     f1car.className = "car start";
+    //     startimg.className = "hidden";
+    // } else {
+    //     f1car.className = "car";
+    //     startimg.className = "startpos-car";
+    // }
     const bubbledivs = document.querySelectorAll('.bubblediv');
     bubbledivs.forEach(bubblediv => {
         //halfway
@@ -74,7 +73,7 @@ function checkSlide(e) {
         const isNotScrolledPast = window.scrollY < imageBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-            bubblediv.className = 'offset-md-1 col-md-9 col-sm-12 active bubblediv';
+            bubblediv.className = 'offset-md-2 col-md-8 col-sm-12 active bubblediv';
         }
     });
 }
