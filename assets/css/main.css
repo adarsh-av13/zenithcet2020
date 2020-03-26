@@ -95,6 +95,9 @@
     text-align: center;
 }
 
+.bubble-headings.exec {
+    margin-bottom: 10vh;
+}
 .car {
     width: 6vw;
     height: 12.33vh;
@@ -326,6 +329,10 @@
 .memberdeets-fixed {
     height: 5vh;
 }
+
+.memberphone a {
+    color: maroon;
+}
 /* .memberdeets-fixed .memberpos {
     font-size: 0.8rem;
 }
@@ -374,7 +381,7 @@
     position: absolute; 
     width: 20vh;
     height: 10vh;
-    margin-top: -10vh;
+    margin-top: -17vh;
     border-bottom-right-radius: 40vh;
     border-bottom-left-radius: 40vh;
     font-size: 0.75rem; 
