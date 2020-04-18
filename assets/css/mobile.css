@@ -1,40 +1,87 @@
 @media only screen and (max-width: 768px) {
-    #institution {
-        font-size: 0.7rem;
-    }
-    #nav-logo {
-        height: 9vh;
-        padding-left: 0;
-    }
-    #starter {
-        top: 30vh;
-    }
-    #starter img {
-        width: 50%;
-    }
-    .bubble {
-        margin-top: 5vh;
-        margin-left: 2%;
-        width: 95%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif
-    }
-    .navbar-toggler {
-        color: white;
-    }
-    .carrow,
-    .carstart,
-    .road,
-    .tri {
-        display: none;
-    }
-    @keyframes diagonal {
-        0% {
-            transform: translatex(0vw) translatey(0vh);
-            width: 100%;
-        }
-        100% {
-            transform: translatex(-3.8vw) translatey(-25.8vh);
-            width: 35%;
-        }
-    }
+  #content {
+    background: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "header header header header header"
+      ". . . . ."
+      "about-us about-us about-us about-us about-us"
+      ". . . . ."
+      "misvis misvis misvis misvis misvis"
+      ". . . . ."
+      "mentors mentors mentors mentors mentors"
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      "cet cet cet cet cet"
+      ". . . . ."
+      "footer footer footer footer footer";
+  }
+
+  #content #theteam {
+    display: none;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 100px min-content min-content min-content min-content
+      min-content min-content;
+    grid-template-areas: "navlogo1 navlogo2 . . icon";
+    background: #500;
+    color: white;
+    align-items: center;
+  }
+
+  .active {
+    background: black;
+    grid-gap: 2px;
+    grid-template-areas:
+      "navlogo1 navlogo2 . . icon"
+      "index index index index index"
+      "about about about about about"
+      "gallery gallery gallery gallery gallery"
+      "events events events events events"
+      "team team team team team"
+      "contact contact contact contact contact";
+  }
+
+  .active .nav-link {
+    display: block;
+    width: 94%;
+    background: #500;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .nav-icon {
+    font-size: 1.5rem;
+    display: block;
+    grid-area: icon;
+    justify-self: center;
+  }
+
+  .bubble {
+    margin: 25px;
+    padding: 5px;
+  }
+
+  #mentorcontainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas:
+      "men1"
+      "."
+      "men2"
+      "."
+      "men3"
+      "."
+      "men4";
+  }
 }

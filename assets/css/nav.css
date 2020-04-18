@@ -1,0 +1,92 @@
+nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 100px;
+  grid-template-areas: "navlogo1 navlogo2  . . . . index about gallery events team contact ";
+  background: #500;
+  color: white;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+.nav-link:hover {
+  color: white;
+  animation: border-play 0.5s forwards;
+}
+
+.nav-icon {
+  display: none;
+}
+
+#nav-logo {
+  padding-left: 20px;
+  grid-area: navlogo1;
+}
+
+#nav-logo img {
+  width: 120%;
+}
+
+#nav-logo2 {
+  padding-left: 10px;
+  grid-area: navlogo2;
+}
+
+#nav-logo2 img {
+  width: 150%;
+}
+
+#index {
+  grid-area: index;
+  justify-self: start;
+  padding: 10px;
+}
+
+#about {
+  grid-area: about;
+  justify-self: start;
+  padding: 10px;
+}
+
+#gallery {
+  grid-area: gallery;
+  justify-self: start;
+  padding: 10px;
+}
+
+#events {
+  grid-area: events;
+  justify-self: start;
+  padding: 10px;
+}
+
+#team {
+  grid-area: team;
+  justify-self: start;
+  padding: 10px;
+}
+
+#contact {
+  grid-area: contact;
+  justify-self: start;
+  padding: 10px;
+}
+
+@keyframes border-play {
+  0% {
+    border: none;
+  }
+  50% {
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+  }
+  100% {
+    border-radius: 5px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+  }
+}

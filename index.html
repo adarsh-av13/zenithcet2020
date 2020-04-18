@@ -1,274 +1,162 @@
-<!-- <!DOCTYPE html> -->
-
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!DOCTYPE html>
+  <head>
     <title>Zenith CET</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/mobile.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
-    <script src="dependencies/jquery/min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/351958393c.js" crossorigin="anonymous"></script>
-    <script src="assets/js/index.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="assets/js/main.js"></script>
-</head>
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark mynav hiddenav hidden" id="mynav">
-        <script src="assets/js/nav.js"></script>
-    </nav>
-    <div id="starter" class="starter-flex" onclick="loadHome()">
+  <body>
+    <div id="starter" class="hidden" onclick="loadHome()">
         <img id="starter-logo" src="assets/images/starterlogo.png">
         <p id="tagline" class="starter-text">E v o l u t i o n &nbsp; R e d e f i n e d</p>
         <p id="blinker-text" class="starter-text">c l i c k &nbsp; t o &nbsp; c o n t i n u e</p>
         <h5 id="institution" class="starter-text">C O L L E G E &nbsp;&nbsp; O F &nbsp;&nbsp; E N G I N E E R I N G
             &nbsp;&nbsp;T R I V A N D R U M</h5>
     </div>
-    <div id="main" class="mainbody hidden">
-    </div>
-    <div id="scrollbody" class="hidden container-fluid">
-        <!-- <div class="row carstart">
-            <div id="start" class="offset-11 startpos">
-                <img id="startimg" class="startpos-car" src="assets/images/f1car.png">
-            </div>
-        </div> -->
-        <div class="row">
-            <div id="aboutus" class="offset-3 col-md-9 col-sm-11 bubblediv">
-                <div class="d-flex flex-wrap">
-                    <div class="bubble">
-                        <h2 class="bubble-headings">About Us</h2>
-                        <p class="bubble-content">The marvels and spark of the team happened when a handful of normal
-                            students came together with a marvellous idea, that was solely based on their common
-                            interest, this was the sounds of the roaring engines to the speeding formula
-                            cars, burning their wheels on the asphalt. Later they carried out operations to help the
-                            team grow and to recruit the dedicated ones, that included exams and interviews. Hence,
-                            ZENITH was born.
-                        </p>
-                    </div>
-                    <!-- <div class="tri"></div> -->
+    <div id="content">
+      <header>
+        <nav id="mynav" class="mynav">
+          <script src="assets/js/nav.js"></script>
+        </nav>
+      </header>
+      <div id="about-us">
+        <div class="bubble">
+          <h2 class="bubble-headings">About Us</h2>
+          <p class="bubble-content">
+            The marvels and spark of the team happened when a handful of normal
+            students came together with a marvellous idea, that was solely based on their common
+            interest, this was the sounds of the roaring engines to the speeding formula
+            cars, burning their wheels on the asphalt. Later they carried out operations to help the
+            team grow and to recruit the dedicated ones, that included exams and interviews. Hence,
+            ZENITH was born.
+          </p>
+        </div>
+      </div>
+      <div id="misvis">
+        <div class="bubble">
+          <h2 class="bubble-headings">MISSION</h2>
+          <p class="bubble-content">To have the lead and to inspire the Formula prototypes using economic
+              and state-of-the-art technologies, all from scratch, and to compete in the Formula Bharat
+              and FFS.
+
+          </p>
+          <h2 class="bubble-headings">VISION</h2>
+          <p class="bubble-content">Seeking into the deepest of dedications and skillset, inspiring the
+              nation to get into the art and the field of Formula student racing, and to craft engineers
+              efficiently using efficient and budget friendly technologies.
+          </p>
+        </div>
+      </div>
+      
+      <div id="mentors">
+        <div class="bubble" style="background: none;">
+          <h2 class="bubble-headings">OUR MENTORS</h2>
+          <div id="mentorcontainer">
+            <div class="mentorbox" id="men1">
+                <img src="assets/images/mentors/mentor1.jpg">
+                <div class="mentordeets-fixed">
+                    <p class="mentorname">Dr Jiji C V</p>
+                    <p class="mentorpos">Principal<br>College of Engineering Trivandrum<br><br></p>
                 </div>
             </div>
-            <!-- <div class="offset-1 road">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div> -->
-        </div>
-
-        <div class="row">
-            <div class="offset-3 col-md-9 col-sm-11 bubblediv">
-                <div class="d-flex flex-wrap">
-                    <div class="bubble">
-                        <h2 class="bubble-headings">MISSION</h2>
-                        <p class="bubble-content">To have the lead and to inspire the Formula prototypes using economic
-                            and state-of-the-art technologies, all from scratch, and to compete in the Formula Bharat
-                            and FFS.
-
-                        </p>
-                        <h2 class="bubble-headings">VISION</h2>
-                        <p class="bubble-content">Seeking into the deepest of dedications and skillset, inspiring the
-                            nation to get into the art and the field of Formula student racing, and to craft engineers
-                            efficiently using efficient and budget friendly technologies.
-                        </p>
-                    </div>
-                    <!-- <div class="tri"></div> -->
+            <div id="men2" class="mentorbox">
+                <img src="assets/images/mentors/mentor2.jpg">
+                <div class="mentordeets-fixed">
+                    <p class="mentorname">Dr A Samson</p>
+                    <p class="mentorpos">Head of the Department
+                        Mechanical Engineering,
+                        College of Engineering Trivandrum</p>
                 </div>
             </div>
-            <!-- <div class="offset-1 road">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div> -->
-        </div>
-        <div class="row">
-            <div class="offset-3 col-md-9 col-sm-11 bubblediv">
-                <div class="d-flex flex-wrap">
-                    <div class="bubble" style="background: none;">
-                        <h2 class="bubble-headings">OUR MENTORS</h2>
-                        <div class="d-flex mentorcontainer">
-                            <div class="mentorbox">
-                                <img src="assets/images/mentors/mentor1.jpg">
-                                <div class="mentordeets-fixed">
-                                    <p class="mentorname">Dr Jiji C V</p>
-                                    <p class="mentorpos">Principal<br>College of Engineering Trivandrum<br><br></p>
-                                </div>
-                                <div class="mentordeets">
-                                    <p class="mentorname">Dr Jiji C V</p>
-                                </div>
-                            </div>
-                            <div class="mentorbox">
-                                <img src="assets/images/mentors/mentor2.jpg">
-                                <div class="mentordeets-fixed">
-                                    <p class="mentorname">Dr A Samson</p>
-                                    <p class="mentorpos">Head of the Department
-                                        Mechanical Engineering,
-                                        College of Engineering Trivandrum</p>
-                                </div>
-                                <div class="mentordeets">
-                                    <p class="mentorname">Dr A Samson</p>
-                                </div>
-                            </div>
-                            <div class="mentorbox">
-                                <img src="assets/images/mentors/mentor3.jpg">
-                                <div class="mentordeets-fixed">
-                                    <p class="mentorname">Prof. Sasi N</p>
-                                    <p class="mentorpos">Assistant Professor, Mechanical Department, College of Engineering Trivandrum</p>
-                                </div>
-                                <div class="mentordeets">
-                                    <p class="mentorname">Prof. Sasi N</p>
-                                </div>
-                            </div>
-                            <div class="mentorbox">
-                                <img src="assets/images/member.png">
-                                <div class="mentordeets-fixed">
-                                    <p class="mentorname">MEMBER NAME</p>
-                                    <p class="mentorpos">Member Pos<br><br><br></p>
-                                </div>
-                                <div class="mentordeets">
-                                    <p class="mentorname">MEMBER NAME</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="tri"></div> -->
+            <div id="men3" class="mentorbox">
+                <img src="assets/images/mentors/mentor3.jpg">
+                <div class="mentordeets-fixed">
+                    <p class="mentorname">Prof. Sasi N</p>
+                    <p class="mentorpos">Assistant Professor, Mechanical Department, College of Engineering Trivandrum</p>
                 </div>
             </div>
-            <!-- <div class="offset-1 road">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div> -->
+            <div id="men4" class="mentorbox">
+                <img src="assets/images/member.png">
+                <div class="mentordeets-fixed">
+                    <p class="mentorname">MEMBER NAME</p>
+                    <p class="mentorpos">Member Pos<br><br><br></p>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="offset-3 col-md-9 col-sm-11 bubblediv">
-                <div class="d-flex flex-wrap">
-                    <div class="bubble" style="background: none;">
-                        <h2 class="bubble-headings exec">THE EXECOM</h2>
-                        <div class="teambox d-flex">
-                            <div class="memberbox">
+      </div>
+      <div id="theteam">
+        <div class="bubble" style="background: none;">
+          <h2 class="bubble-headings">THE TEAM</h2>
+                        <div id="teambox">
+                            <div id="mem1" class="memberbox">
                                 <img src="assets/images/members/aslamkhan.jpg">
-                                <div class="memberdeets-fixed">
+                                <div class="memberdeets">
                                     <p class="membername">ASLAM KHAN P V</p>
                                     <p class="memberpos">Team Captain</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
                                 </div>
-                                <div class="memberdeets">
-                                    <p class="membername">ASLAM KHAN P V</p>
-                                </div>
                             </div>
-                            <div class="memberbox">
+                            <div id="mem2" class="memberbox">
                                 <img src="assets/images/members/anto.jpg">
-                                <div class="memberdeets-fixed">
+                                <div class="memberdeets">
                                     <p class="membername">A ANTO NIGIN</p>
                                     <p class="memberpos">Manager</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
                                 </div>
-                                <div class="memberdeets">
-                                    <p class="membername">A ANTO NIGIN</p>
-                                </div>
                             </div>
-                            <div class="memberbox">
+                            <div id="mem3" class="memberbox">
                                 <img src="assets/images/member.png">
-                                <div class="memberdeets-fixed">
+                                <div class="memberdeets">
                                     <p class="membername">ANDRIA ALEX THOMAS</p>
                                     <p class="memberpos">Sponsorship and Marketing Head</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
                                 </div>
-                                <div class="memberdeets">
-                                    <p class="membername">ANDRIA ALEX THOMAS</p>
-                                </div>
                             </div>
-                        </div>
-                        <div class="teambox d-flex">
-                            <div class="memberbox">
+                            <div id="mem4" class="memberbox">
                                 <img src="assets/images/members/surya.jpg">
-                                <div class="memberdeets-fixed">
+                                <div class="memberdeets">
                                     <p class="membername">P SURYANARAYAN NAIR</p>
                                     <p class="memberpos">Technical Head</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
                                 </div>
-                                <div class="memberdeets">
-                                    <p class="membername">P SURYANARAYAN NAIR</p>
-                                </div>
                             </div>
-                            <div class="memberbox">
+                            <div id="mem5" class="memberbox">
                                 <img src="assets/images/member.png">
-                                <div class="memberdeets-fixed">
+                                <div class="memberdeets">
                                     <p class="membername">SREERAJ R</p>
                                     <p class="memberpos">Production Head</p>
                                     <p class="memberphone"><a href="tel: +919876543210">+91 9876543210</a></p>
                                 </div>
-                                <div class="memberdeets">
-                                    <p class="membername">SREERAJ R</p>
-                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- <div class="tri"></div> -->
-                </div>
-            </div>
-            <!-- <div class="offset-1 road" style="height: 120vh">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div> -->
         </div>
-        <div class="row">
-            <div class="offset-3 col-md-9 col-sm-11 bubblediv">
-                <div class="d-flex flex-wrap">
-                    <div class="bubble">
-                        <h2 class="bubble-headings">College of Engineering Trivandrum</h2>
-                        <p class="bubble-content">Founded in 1939 during the reign of the Travancore king, Sreechithira
-                            Thirunal Balarama Varma, College of Engineering Trivandrum commonly known as CET is the
-                            first engineering college in Kerala. Since inception, CET continues to
-                            maintain its excellence in technical education and research in the state. CET has been
-                            ranked 47th in Outlook magazine's list of top 100 engineering colleges in India 2016. Till
-                            date, the college has produced lakhs of graduates
-                            and under graduates whose alumni association of CETAA has firm grips all over the globe. As
-                            per the present statistics till date, CET tops the technical education in Kerala</p>
-                    </div>
-                    <!-- <div class="tri"></div> -->
-                </div>
-            </div>
-            <!-- <div class="offset-1 road">
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-                <div class="crossline"></div>
-            </div> -->
+      </div>
+      <div id="cet">
+        <div class="bubble">
+          <h2 class="bubble-headings">College of Engineering Trivandrum</h2>
+          <p class="bubble-content">Founded in 1939 during the reign of the Travancore king, Sreechithira
+              Thirunal Balarama Varma, College of Engineering Trivandrum commonly known as CET is the
+              first engineering college in Kerala. Since inception, CET continues to
+              maintain its excellence in technical education and research in the state. CET has been
+              ranked 47th in Outlook magazine's list of top 100 engineering colleges in India 2016. Till
+              date, the college has produced lakhs of graduates
+              and under graduates whose alumni association of CETAA has firm grips all over the globe. As
+              per the present statistics till date, CET tops the technical education in Kerala</p>
         </div>
-        <!-- <div class="row carrow">
-            <img id="car" class="car" src="assets/images/f1car.png">
-        </div> -->
-    </div>
-    <!-- Footer -->
-    <footer id="myfooter" class="hidden footer-page">
+      </div>
+      <footer id="myfooter" class="footer-page">
         <div class="footer-info">
-            <!-- <div id="end" class="endpos">
-            </div> -->
-            <div class="footer-icons-large-teams" onclick="topFunction()" title="Back to Top">
-                <button class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+            <div id="f2" class="footer-icons-large" onclick="scrollToTop()" title="Back to Top">
+                <button class="back-to-top"><i class="fas fa-chevron-up fa-3x"></i></button>
             </div>
-            <div class="offset-2 footer-contact">
+            <div class="footer-contact">
                 <h3>CONTACT US</h3>
                 <div class="d-flex">
                     <div class="footer-icons">
@@ -329,27 +217,11 @@
                         href="https://www.linkedin.com/in/zenith-motorsport">linkedin/in/zenith-motorsport</a>
                 </div>
             </div>
-            <!-- <div class="footer-social d-flex align-items-center">
-                    <div class="footer-icons">
-                        <a href="https://www.facebook.com/Zenith-Motorsport-CET-2301518046793522/"><i class='fab fa-facebook'></i></a>
-                    </div>
-                    <div class="footer-icons">
-                        <a href="https://instagram.com/zenithmotorsportcet?igshid=1wf889exsezqn"><i class='fab fa-instagram'></i></a>
-                    </div>
-                    <div class="footer-icons">
-                        <a href="https://www.linkedin.com/in/zenith-motorsport"><i class='fab fa-linkedin'></i></a>
-                    </div>
-                </div>    
-                <div class="footer-icons d-flex align-items-center">
-                        <button class="back-to-top" onclick="topFunction()"><i class="fa fa-toggle-up"></i></button>
-                </div>   -->
         </div>
-
-        <div class="footer-copyright text-center">© 2020 Copyright:&nbsp;
+        <div class="footer-copyright">© 2020 Copyright:&nbsp;
             <a href="https:zenithmotorsportcet.in">Zenith Motor Sport CET</a>
         </div>
     </footer>
-
-</body>
-
+    </div>
+  </body>
 </html>
