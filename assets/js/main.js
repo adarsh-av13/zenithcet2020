@@ -21,9 +21,9 @@ function loadHome() {
 window.onload = () => {
   let starter = document.getElementById("starter");
   let content = document.getElementById("content");
-  if (!sessionStorage.getItem("wasVisited")) {
-    starter.classList.remove("hidden");
-    content.classList.add("hidden");
+  if (sessionStorage.getItem("wasVisited")) {
+    starter.classList.add("hidden");
+    content.classList.remove("hidden");
   }
   for (var i in navigatorsProperties) {
     starter.addEventListener(
