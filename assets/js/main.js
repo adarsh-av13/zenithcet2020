@@ -10,6 +10,14 @@ function scrollToTop() {
 }
 
 var navigatorsProperties = ["animationend", "webkitAnimationEnd"];
+var links = [
+  "index.html",
+  "index.html#about",
+  "gallery.html",
+  "#",
+  "team.html",
+  "#myfooter",
+];
 
 function loadHome() {
   let starter = document.getElementById("starter");
@@ -21,6 +29,15 @@ function loadHome() {
 window.onload = () => {
   let starter = document.getElementById("starter");
   let content = document.getElementById("content");
+  let navlinks = Array.from(document.getElementsByClassName("nav-link"));
+  let mynav = document.getElementById("mynav");
+  for (let i = 0; i < navlinks.length; ++i) {
+    navlinks[i].addEventListener("click", (nav) => {
+      event.preventDefault();
+      if (mynav.classList !== "mynav") mynav.classList.remove("active");
+      location.replace(links[i]);
+    });
+  }
   if (sessionStorage.getItem("wasVisited")) {
     starter.classList.add("hidden");
     content.classList.remove("hidden");
@@ -38,3 +55,13 @@ window.onload = () => {
     );
   }
 };
+
+// document.onreadystatechange = function () {
+//   if (document.readyState !== "complete") {
+//     document.querySelector("body").style.visibility = "hidden";
+//     document.querySelector("#loader").style.visibility = "visible";
+//   } else {
+//     document.querySelector("#loader").style.display = "none";
+//     document.querySelector("body").style.visibility = "visible";
+//   }
+// };
