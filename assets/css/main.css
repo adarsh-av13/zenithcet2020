@@ -136,14 +136,11 @@ header {
 
 #mentors {
   grid-area: mentors;
-  border-top: 50px solid #500;
 }
 
 #theteam {
   grid-area: theteam;
   height: 700px;
-  border-top: 50px solid #500;
-  border-bottom: 50px solid #500;
 }
 
 #cet {

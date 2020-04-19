@@ -84,4 +84,107 @@
       "."
       "men4";
   }
+
+  #content-team {
+    background: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "header header header header header"
+      "theteam theteam theteam theteam theteam"
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      "rot rot rot rot rot"
+      ". . . . ."
+      "footer footer footer footer footer";
+  }
+
+  #teambox {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "mem1"
+      "."
+      "mem2"
+      "."
+      "mem3"
+      "."
+      "mem4"
+      "."
+      "mem5"
+      ".";
+  }
+
+  .memberpos,
+  .memberphone {
+    display: block;
+  }
+
+  .memberdeets {
+    margin-top: -100px;
+  }
+
+  #rest-of-the-team {
+    display: grid;
+    grid-area: rot;
+    grid-auto-rows: 65px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2px;
+    color: white;
+  }
+
+  #rot-header {
+    grid-row: 1/2;
+    padding-left: 45px;
+  }
+
+  .rot-mem {
+    grid-column: 2/12;
+  }
+  .vertical-rule {
+    display: none;
+  }
+
+  .empty-foot {
+    margin-right: 10px;
+  }
+
+  .footer-box {
+    margin: 10px;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  #pic-gallery {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas:
+      ". i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 ."
+      ". . . . . . . . . . . ."
+      ". i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 ."
+      ". . . . . . . . . . . ."
+      ". i3 i3 i3 i3 i3 i3 i3 i3 i3 i3 ."
+      ". . . . . . . . . . . ."
+      ". i4 i4 i4 i4 i4 i4 i4 i4 i4 i4 ."
+      ". . . . . . . . . . . ."
+      ". i5 i5 i5 i5 i5 i5 i5 i5 i5 i5 ."
+      ". . . . . . . . . . . ."
+      ". i6 i6 i6 i6 i6 i6 i6 i6 i6 i6 ."
+      ". . . . . . . . . . . ."
+      ". i7 i7 i7 i7 i7 i7 i7 i7 i7 i7 .";
+  }
 }
