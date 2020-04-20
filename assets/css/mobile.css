@@ -199,4 +199,31 @@
       ". . . . . . . . . . . ."
       ". i7 i7 i7 i7 i7 i7 i7 i7 i7 i7 .";
   }
+
+  #starter {
+    grid-template-areas:
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      "s1 s1 s1 s1 s1"
+      "s2 s2 s2 s2 s2"
+      ". s3 s3 s3 ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      "s4 s4 s4 s4 s4"
+      ". . . . ."
+      ". . . . ."
+      ". . . . .";
+    background: black;
+  }
+
+  #starter-logo {
+    width: 75%;
+  }
+
+  #institution {
+    font-size: 1rem;
+  }
 }
