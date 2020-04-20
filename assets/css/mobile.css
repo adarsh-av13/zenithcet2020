@@ -7,7 +7,6 @@
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas:
       "header header header header header"
-      ". . . . ."
       "about-us about-us about-us about-us about-us"
       ". . . . ."
       "misvis misvis misvis misvis misvis"
@@ -34,6 +33,7 @@
     background: #500;
     color: white;
     align-items: center;
+    animation: fade-up 0.5s;
   }
 
   .active {
@@ -47,6 +47,18 @@
       "events events events events events"
       "team team team team team"
       "contact contact contact contact contact";
+    animation: fade-down 0.5s;
+  }
+
+  @keyframes fade-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 
   .active .nav-link {
@@ -67,8 +79,8 @@
   }
 
   .bubble {
-    margin: 25px;
-    padding: 5px;
+    margin: 0px;
+    padding: 25px;
   }
 
   #mentorcontainer {
