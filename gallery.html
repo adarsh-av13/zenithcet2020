@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/351958393c.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
   </head>
 
-  <body>
+  <body onscroll="scroller()">
     <div id="content-gallery">
       <header>
         <nav id="mynav" class="mynav">
@@ -23,37 +24,44 @@
         <div id="i1" class="img-box">
           <img src="assets/images/comingsoon.png">
           <h2>See Above</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div id="i2" class="img-box">
           <img src="assets/images/comingsoon.png">
           <h2>See Above</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div id="i3" class="img-box">
           <img src="assets/images/comingsoon.png">
           <h2>See Above</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div id="i4" class="img-box">
           <img src="assets/images/comingsoon.png">
           <h2>See Above</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div id="i5" class="img-box">
           <img src="assets/images/comingsoon.png">
           <h2>See Above</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div id="i6" class="img-box">
           <img src="assets/images/comingsoon.png">
           <h2>See Above</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div id="i7" class="img-box">
           <img src="assets/images/comingsoon.png">
           <h2>See Above</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+      </div>
+      <div id="back-to-top" class="hidden footer-icons-large" onclick="scrollToTop()" title="Back to Top">
+        <button class="back-to-top"><i class="fas fa-chevron-up fa-3x"></i></button>
       </div>
       <footer id="myfooter" class="footer-page">
         <div class="footer-info">
-            <div id="f2" class="footer-icons-large" onclick="scrollToTop()" title="Back to Top">
-                <button class="back-to-top"><i class="fas fa-chevron-up fa-3x"></i></button>
-            </div>
             <div class="footer-contact">
                 <h3>CONTACT US</h3>
                 <div class="d-flex footer-box">
@@ -120,6 +128,14 @@
             <a href="https:zenithmotorsportcet.in">Zenith Motor Sport CET</a>
         </div>
     </footer>
+    <div id="modal" class="modal">
+      <img src="">
+      <h2></h2>
+      <p></p>
+      <button onclick="closeModal()">
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
     </div>
   </body>
 </html>

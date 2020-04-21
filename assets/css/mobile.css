@@ -83,6 +83,9 @@
     padding: 25px;
   }
 
+  .bubble-content {
+    font-size: 1rem;
+  }
   #mentorcontainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -169,10 +172,6 @@
     display: none;
   }
 
-  .empty-foot {
-    margin-right: 10px;
-  }
-
   .footer-box {
     margin: 10px;
   }
@@ -216,7 +215,6 @@
       ". . . . ."
       ". . . . ."
       ". . . . .";
-    background: black;
   }
 
   #starter-logo {
@@ -224,6 +222,30 @@
   }
 
   #institution {
-    font-size: 1rem;
+    font-size: 0.6rem;
+  }
+
+  .block-dis {
+    grid-auto-rows: max-content;
+  }
+
+  .modal {
+    overflow-y: scroll;
+  }
+
+  .modal img {
+    grid-column: 2/12;
+    grid-row: 1/2;
+    width: 100%;
+  }
+
+  .modal h2 {
+    grid-column: 2/12;
+    grid-row: 2/3;
+  }
+
+  .modal p {
+    grid-column: 2/12;
+    grid-row: 3/4;
   }
 }

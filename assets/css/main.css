@@ -404,7 +404,7 @@ footer {
   padding: 0 0 5vh 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-areas: ". . f1 f1 f1 f1 f1 f1 f1 f1 f1 f2";
+  grid-template-areas: ". . f1 f1 f1 f1 f1 f1 f1 f1 f1 f1";
 }
 
 .footer-page {
@@ -437,8 +437,11 @@ footer {
   cursor: pointer;
 }
 
-#f2 {
-  grid-area: f2;
+#back-to-top {
+  float: right;
+  right: 0;
+  position: fixed;
+  bottom: 20px;
 }
 
 @keyframes padding-rem {

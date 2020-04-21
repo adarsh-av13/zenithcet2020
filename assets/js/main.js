@@ -65,3 +65,10 @@ window.onload = () => {
 //     document.querySelector("body").style.visibility = "visible";
 //   }
 // };
+
+function scroller() {
+  let backtotop = document.getElementById("back-to-top");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+    backtotop.classList.remove("hidden");
+  else backtotop.classList.add("hidden");
+}

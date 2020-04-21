@@ -11,7 +11,7 @@
     <script src="assets/js/main.js"></script>
   </head>
 
-  <body>
+  <body onscroll="scroller()">
     <div id="starter" onclick="loadHome()">
         <img id="starter-logo" src="assets/images/starterlogo.png">
         <p id="tagline" class="starter-text">E v o l u t i o n &nbsp; R e d e f i n e d</p>
@@ -151,11 +151,11 @@
               per the present statistics till date, CET tops the technical education in Kerala</p>
         </div>
       </div>
+      <div id="back-to-top" class="hidden footer-icons-large" onclick="scrollToTop()" title="Back to Top">
+        <button class="back-to-top"><i class="fas fa-chevron-up fa-3x"></i></button>
+      </div>
       <footer id="myfooter" class="footer-page">
         <div class="footer-info">
-            <div id="f2" class="footer-icons-large" onclick="scrollToTop()" title="Back to Top">
-                <button class="back-to-top"><i class="fas fa-chevron-up fa-3x"></i></button>
-            </div>
             <div class="footer-contact">
                 <h3>CONTACT US</h3>
                 <div class="d-flex footer-box">
