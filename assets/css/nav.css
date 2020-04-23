@@ -1,8 +1,8 @@
 nav {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-auto-rows: 100px;
-  grid-template-areas: "navlogo1 navlogo2  . . . . index about gallery events team contact ";
+  grid-template-areas: "navlogo1 navlogo2  . . . index about gallery events team contact";
   background: #500;
   color: white;
   align-items: center;
