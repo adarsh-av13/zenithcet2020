@@ -285,15 +285,16 @@ footer {
   cursor: pointer;
 }
 
-.memberbox:hover .memberdeets {
+.current {
+  margin-top: -100px;
   animation: move-up 0.2s forwards;
 }
 
-.memberbox:hover .memberpos {
+.current .memberpos {
   display: block;
 }
 
-.memberbox:hover .memberphone {
+.current .memberphone {
   display: block;
 }
 
@@ -310,6 +311,9 @@ footer {
   background: rgb(0, 0, 0, 0.2);
 }
 
+.memberdeets:hover {
+  cursor: pointer;
+}
 .membername {
   font-size: 1.2rem;
   margin-bottom: 60px !important;
@@ -444,6 +448,9 @@ footer {
   bottom: 20px;
 }
 
+#backtotop2 {
+  display: none;
+}
 @keyframes padding-rem {
   50% {
     border-color: transparent;

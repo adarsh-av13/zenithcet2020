@@ -38,6 +38,17 @@ window.onload = () => {
       location.replace(links[i]);
     });
   }
+  let members = document.querySelectorAll(".memberbox");
+  let memberdees = document.querySelectorAll(".memberdeets");
+  console.log(members);
+  members.forEach((member) => {
+    member.addEventListener("mouseover", () => {
+      memberdees.forEach((mem) => {
+        mem.classList.remove("current");
+      });
+      member.nextSibling.nextSibling.classList.add("current");
+    });
+  });
   if (sessionStorage.getItem("wasVisited")) {
     starter.classList.add("hidden");
     content.classList.remove("hidden");

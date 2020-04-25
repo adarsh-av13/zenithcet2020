@@ -118,6 +118,9 @@
   border: none;
 }
 
+.modal i {
+  color: #aaa;
+}
 .modal i:hover {
   cursor: pointer;
 }

@@ -172,10 +172,6 @@
     display: none;
   }
 
-  .footer-box {
-    margin: 10px;
-  }
-
   footer {
     height: 200px;
   }
@@ -247,5 +243,9 @@
   .modal p {
     grid-column: 2/12;
     grid-row: 3/4;
+  }
+
+  #back-to-top {
+    right: -35px;
   }
 }
