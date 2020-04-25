@@ -29,6 +29,8 @@
   margin-top: -10px;
   margin-bottom: 10px;
   padding-left: 75px;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 .rot-mem {
   padding: 0;

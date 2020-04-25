@@ -38,101 +38,16 @@
         </div>
       </div>
       <div id="rest-of-the-team">
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/abdulhadi.jpg">
-            <h3>Abdul Hadi P S</h3>
-        </div>
         <div id="rot-header" class="rot-mem d-flex">
             <h2>Rest of Our Team</h2>
         </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/sreelald.jpg">
-            <h3>Sreelal D</h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/ashishprakash.png">
-            <h3>Ashish Prakash </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/sreejithksunil.jpg">
-            <h3>Sreejith K Sunil </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/sachinvarghese.jpg">
-            <h3>Sachin Varghese </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/vivekeugene.jpg">
-            <h3>Vivek Eugene </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/parvathyal.jpg">
-            <h3>Parvathy A L</h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/sanatwilson.jpg">
-            <h3>Sanat Wilson </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/anandhumb.jpg">
-            <h3>Anandhu M B </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/anandukp.jpg">
-            <h3>Anandu K P </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/hashimnm.jpg">
-            <h3> Hashim N M </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/salihvp.jpg">
-            <h3> Salih V P </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/dilvaseem.jpg">
-            <h3>Dilvaseem </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/mohamedhazeem .jpg">
-            <h3>Mohamed Hazeem </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/yedukrishnanps.jpg">
-            <h3> Yedukrishnan P S </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/amalbabu.jpg">
-            <h3>Amal Babu </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/anugrahtv.jpg">
-            <h3>Anugrah T V </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/sidharthh.jpg">
-            <h3>Sidharth H </h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/members/safwanp.jpg">
-            <h3>Safwan P </h3>
-        </div>
-        <!-- <div class="rot-mem d-flex">
-            <img src="assets/images/member.png">
-            <h3></h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/member.png">
-            <h3></h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/member.png">
-            <h3></h3>
-        </div>
-        <div class="rot-mem d-flex">
-            <img src="assets/images/member.png">
-            <h3></h3>
-        </div> -->
+        <rot-member
+            v-for="member in rotMembers"
+            :key="member"
+            :name="member.name"
+            :source="member.source"
+        >
+        </rot-member>
       </div>
       <div id="back-to-top" class="hidden footer-icons-large" onclick="scrollToTop()" title="Back to Top">
         <button class="back-to-top"><i class="fas fa-chevron-up fa-3x"></i></button>
