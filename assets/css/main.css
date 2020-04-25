@@ -447,10 +447,6 @@ footer {
   position: fixed;
   bottom: 20px;
 }
-
-#backtotop2 {
-  display: none;
-}
 @keyframes padding-rem {
   50% {
     border-color: transparent;
