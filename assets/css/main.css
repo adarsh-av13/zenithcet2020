@@ -453,3 +453,24 @@ footer {
     border-color: transparent;
   }
 }
+
+.event-box {
+  display: grid;
+  margin: 50px;
+  padding: 25px;
+  border-top: 1px solid white;
+  grid-template-columns: repeat(12, 1fr);
+  color: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.event-box img {
+  margin: 10px;
+  grid-column: 1/4;
+  width: 100%;
+}
+
+.event-details {
+  grid-column: 5/12;
+}

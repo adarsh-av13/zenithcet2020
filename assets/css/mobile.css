@@ -249,4 +249,21 @@
   #back-to-top {
     right: -35px;
   }
+
+  .event-box {
+    margin: 0;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "im"
+      "text";
+  }
+
+  .event-box img {
+    grid-area: im;
+  }
+
+  .event-details {
+    grid-area: text;
+  }
 }

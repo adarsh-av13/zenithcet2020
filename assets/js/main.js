@@ -14,7 +14,7 @@ var links = [
   "index.html",
   "index.html#about",
   "gallery.html",
-  "#",
+  "events.html",
   "team.html",
   "#myfooter",
 ];
